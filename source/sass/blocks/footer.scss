@@ -1,0 +1,17 @@
+.footer {
+  background-color: $black-russian;
+}
+
+.footer__navigation {
+  list-style: none;
+
+  li:not(:first-child) {
+    color: $base-white;
+  }
+}
+
+
+.footer__social {
+  list-style: none;
+  margin: 0;
+}

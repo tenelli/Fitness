@@ -1,0 +1,236 @@
+.gym {
+  padding-top: 120px;
+  padding-bottom: 235px;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 100px;
+    padding-bottom: 183px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 70px;
+    padding-bottom: 0;
+  }
+}
+
+
+.gym__photo {
+  @media (min-width: 1200px) {
+    img {
+      min-width: 660px;
+      max-width: 660px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    img {
+      width: 678px;
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 40px;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.gym__video {
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(20, 54, 122, 0.5);
+    z-index: 1;
+  }
+
+  @media (min-width: 1200px) {
+    min-width: 364px;
+    img {
+      min-width: 364px;
+    }
+
+    &::before {
+      height: 228px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    position: absolute;
+    max-width: 266px;
+    height: 167px;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: -83px;
+
+    img {
+      width: 266px;
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    position: relative;
+    margin-bottom: 70px;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.gym__video a {
+  position: absolute;
+  z-index: 5;
+  width: 100px;
+  height: 100px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  @media (max-width: $tablet-width) {
+    width: 73px;
+    height: 73px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/play.svg");
+    background-position: 50% 50;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    top: 35%;
+
+    @media (max-width: $tablet-width) {
+      background-image: url("../img/play_tablet.svg");
+      width: 73px;
+      height: 73px;
+      top: 0;
+    }
+  }
+}
+
+.gym__demonstration {
+  @media (min-width: 768px) {
+    position: relative;
+  }
+}
+
+.gym__description {
+  justify-self: center;
+
+  @media (min-width: 1350px) {
+    margin-right: 85px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 360px;
+    margin-left: 60px;
+    margin-right: 35px;
+  }
+
+  @media (min-width: $tablet-width) {
+    max-width: 502px;
+  }
+
+  @media (max-width: $mobile-width) {
+    min-width: 290px;
+    padding: 0 15px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  h2 {
+    margin-top: 49px;
+    margin-bottom: 25px;
+    font-family: $alumni-sans;
+    font-size: 48px;
+    line-height: 58px;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    color: $sapphire;
+
+    @media (max-width: $tablet-width) {
+      font-size: 42px;
+      line-height: 50px;
+      margin-top: 0;
+      margin-bottom: 6px;
+      text-align: center;
+    }
+
+    @media (max-width: $mobile-width) {
+      font-size: 32px;
+      line-height: 38px;
+      margin-bottom: 20px;
+      text-align: left;
+    }
+  }
+
+  h3 {
+    margin: 0;
+    margin-bottom: 55px;
+    font-family: $roboto-condensed;
+    font-size: 18px;
+    line-height: 27px;
+    font-family: 400;
+    color: $sapphire;
+
+    @media (max-width: $tablet-width) {
+      text-align: center;
+    }
+
+    @media (max-width: $mobile-width) {
+      text-align: left;
+      margin-bottom: 40px;
+    }
+  }
+
+  p:last-of-type {
+    @media (max-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  p {
+    font-family: $roboto-condensed;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+    color: $sapphire;
+
+    @media (max-width: $tablet-width) {
+      max-width: 502px;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    @media (max-width: $mobile-width) {
+      width: 100%;
+      text-align: left;
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.gym__container {
+  @media (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 678px;
+    padding: 0 45px;
+    margin: 0 auto;
+  }
+}

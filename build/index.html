@@ -454,24 +454,39 @@
         <section class="stock">
           <div class="container">
             <h2>Акции</h2>
-            <div>
-              <div>
-                <span>4999</span>
-                <p>Год</p>
-                <h3>Безлимитный абонемент в тренажерный зал</h3>
-                <a href="#">Подробнее</a>
+            <div class="stock__wrapper">
+              <div class="stock__illustration">
+                <div class="stock__description">
+                  <p>Год</p>
+                  <span>4999</span>
+                  <h3>Безлимитный абонемент в тренажерный зал</h3>
+                  <button class="stock__button">
+                    <a href="#">Подробнее</a>
+                  </button>
+                </div>
+                <div class="stock__picture">
+                  <picture>
+                    <source type="image/webp" srcset="./img/promo.webp 1x, ./img/promo@2x.webp 2x">
+                    <img src="./img/promo.jpg" srcset="./img/promo@2x.jpg 2x" width="399" height="462" alt="Фотография девушки в синем спортивном костюме на фоне ясного неба." loading="lazy">
+                  </picture>
+                </div>
               </div>
-              <div>Фотка с жопой</div>
-            </div>
-            <div>
-              <p>Месяц бесплатно</p>
-              <h3>Приведи друга, получи абонемент в подарок</h3>
-              <a href="#">Подробнее</a>
-            </div>
-            <div>
-              <p>Скидка 20%/p>
-              <h3>Корпоративный фитнес с командой</h3>
-              <a href="#">Подробнее</a>
+              <div class="stock__options-wrapper">
+                <div class="stock__option">
+                  <p>Месяц бесплатно</p>
+                  <h3>Приведи друга, получи абонемент в подарок</h3>
+                  <button class="stock__button stock__button--promo">
+                    <a href="#">Подробнее</a>
+                  </button>
+                </div>
+                <div class="stock__option">
+                  <p>Скидка 20%</p>
+                  <h3>Корпоративный фитнес с командой</h3>
+                  <button class="stock__button stock__button--promo">
+                    <a href="#">Подробнее</a>
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </section>

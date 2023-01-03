@@ -88,30 +88,6 @@ if (tabs && options) {
   }
 }
 
-const cards = document.querySelectorAll('.trainers__card');
-cards.forEach((article) => {
-  article.classList.remove('trainers__card--no-js');
-  article.addEventListener('click', () => {
-    toggleClasses(article);
-  });
-
-  article.addEventListener('focusin', () => {
-    toggleClasses(article);
-  });
-
-  article.addEventListener('blur', () => {
-    toggleClasses(article);
-  });
-});
-
-function toggleClasses(elem) {
-  let temp = elem.firstElementChild;
-  let card = elem.lastElementChild;
-  temp.classList.toggle('on-top');
-  card.classList.toggle('on-top');
-  temp.classList.toggle('on-bottom');
-  card.classList.toggle('on-bottom');
-}
 
 /* global Swiper */
 /* eslint no-undef: "error" */
@@ -134,6 +110,12 @@ const swiper = new Swiper('.trainers__swiper', {
       spaceBetween: 40,
     },
   },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  simulateTouch: false,
+  grabCursor: false,
 });
 
 swiper();

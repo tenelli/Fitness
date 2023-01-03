@@ -4,6 +4,10 @@
   margin: 0 auto;
   padding: 0 103px;
 
+  @media (max-width: 1350px) {
+    padding: 0 45px;
+  }
+
   @media (max-width: $tablet-width) {
     min-width: 678px;
     padding: 0 45px;

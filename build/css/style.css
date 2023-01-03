@@ -2072,36 +2072,60 @@ button,
   padding-bottom: 91px;
 }
 
-.trainers__card {
-  width: 260px;
+.trainers h2 {
+  margin: 0;
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  color: #102654;
+  font-size: 54px;
+  line-height: 65px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  margin-left: 2px;
+  margin-bottom: 48px;
+}
+
+.trainers__wrapper {
   position: relative;
 }
 
-.trainers__card:focus-visible .trainers__picture {
-  z-index: -1;
+.trainers__container {
+  margin: 0 auto;
 }
 
-.trainers__card:focus-visible .trainers__description {
-  z-index: 1;
+.trainers__button {
+  background-color: transparent;
+  border: none;
 }
 
-.trainers__card--no-js .trainers__description {
-  z-index: -1;
+.trainers__button--prev {
+  left: -56px;
 }
 
-.trainers__card--no-js:hover .trainers__picture,
-.trainers__card--no-js:focus .trainers__picture {
-  z-index: -1;
+.trainers__button--next {
+  right: -56px;
 }
 
-.trainers__card--no-js:hover .trainers__description,
-.trainers__card--no-js:focus .trainers__description {
-  z-index: 1;
+.trainers__button--prev.swiper-button-prev::after,
+.trainers__button--next.swiper-button-next::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/arrow.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 32px;
+}
+
+.trainers__button--next.swiper-button-next::after {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .trainers__picture {
-  max-width: 260px;
   position: relative;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .trainers__picture p {
@@ -2118,15 +2142,35 @@ button,
   color: #ffffff;
 }
 
+.trainers__picture img {
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.trainers__card {
+  cursor: pointer;
+  position: relative;
+}
+
+.trainers__card:hover .trainers__picture p,
+.trainers__card:focus-visible .trainers__picture p {
+  display: none;
+}
+
+.trainers__card:hover .trainers__description,
+.trainers__card:focus-visible .trainers__description {
+  opacity: 1;
+}
+
 .trainers__description {
   position: absolute;
   top: 0;
   left: 0;
   background-color: rgba(16, 38, 84, 0.89);
-  width: 260px;
   height: 294px;
   padding: 58px 20px;
   overflow: auto;
+  opacity: 0;
 }
 
 .trainers__description p {
@@ -2169,18 +2213,6 @@ button,
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-}
-
-.on-top {
-  z-index: 1;
-}
-
-.on-bottom {
-  z-index: -1;
-}
-
-.trainers__swiper.swiper {
-  width: 1160px;
 }
 
 /* @mixin hover-focus {
@@ -2263,6 +2295,23 @@ button,
     padding: 0 45px;
     margin: 0 auto;
   }
+
+  .trainers__picture {
+    width: 268px;
+  }
+
+  .trainers__picture img {
+    width: 268px;
+    max-height: 294px;
+  }
+
+  .trainers__card {
+    width: 268px;
+  }
+
+  .trainers__description {
+    width: 268px;
+  }
 }
 
 @media (min-width: 1199px) {
@@ -2331,26 +2380,41 @@ button,
     padding: 85px 79px 87px 78px;
   }
 
-  .trainers__card .trainers__picture {
-    z-index: 1;
+  .trainers__container {
+    min-width: 994px;
+    max-width: 1366px;
+    padding: 0 103px;
   }
 
-  .trainers__card .trainers__description {
-    z-index: -1;
+  .trainers__picture {
+    width: 260px;
   }
 
-  .trainers__card:hover .trainers__picture {
-    z-index: -1;
+  .trainers__picture img {
+    width: 260px;
+    max-height: 294px;
   }
 
-  .trainers__card:hover .trainers__description {
-    z-index: 1;
+  .trainers__card {
+    max-width: 260px;
+    min-width: 218px;
+  }
+
+  .trainers__description {
+    max-width: 260px;
+    min-width: 218px;
   }
 }
 
 @media (min-width: 1350px) {
   .gym__description {
     margin-right: 85px;
+  }
+}
+
+@media (max-width: 1350px) {
+  .container {
+    padding: 0 45px;
   }
 }
 
@@ -2558,8 +2622,30 @@ button,
     line-height: 15px;
   }
 
+  .trainers {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .trainers h2 {
+    margin-left: 0;
+    text-align: center;
+    font-size: 42px;
+    line-height: 50px;
+    margin-bottom: 31px;
+  }
+
+  .trainers__container {
+    padding: 0 101px;
+    width: 768px;
+  }
+
   .trainers__swiper.swiper {
     width: 566px;
+  }
+
+  .trainers__description {
+    padding: 58px 54px;
   }
 }
 
@@ -2738,7 +2824,66 @@ button,
     padding-bottom: 7px;
   }
 
+  .trainers {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .trainers h2 {
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 50px;
+  }
+
+  .trainers__container {
+    padding: 0 47px;
+    width: 100%;
+    max-width: 500px;
+  }
+
   .trainers__swiper.swiper {
-    width: 226px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .trainers__button--prev {
+    left: -32px;
+  }
+
+  .trainers__button--next {
+    right: -32px;
+  }
+
+  .trainers__button--prev.swiper-button-prev::after,
+  .trainers__button--next.swiper-button-next::after {
+    max-width: 10px;
+  }
+
+  .trainers__picture {
+    width: 100%;
+    max-width: 500px;
+    height: 100%;
+  }
+
+  .trainers__picture img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .trainers__card {
+    width: 100%;
+    max-width: 500px;
+    min-height: 274px;
+  }
+
+  .trainers__description {
+    padding: 48px 33px;
+  }
+
+  .trainers__description {
+    width: 100%;
+    max-width: 500px;
+    min-height: 274px;
+    height: 100%;
   }
 }

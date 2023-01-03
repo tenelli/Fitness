@@ -91,7 +91,8 @@ if (tabs && options) {
 
 /* global Swiper */
 /* eslint no-undef: "error" */
-const swiper = new Swiper('.trainers__swiper', {
+
+const swiper1 = new Swiper('.trainers__swiper', {
   direction: 'horizontal',
   loop: true,
   allowTouchMove: true,
@@ -118,4 +119,14 @@ const swiper = new Swiper('.trainers__swiper', {
   grabCursor: false,
 });
 
-swiper();
+
+const swiper2 = new Swiper('.reviews__swiper', {
+  direction: 'horizontal',
+  loop: false,
+  autoHeight: true,
+  navigation: {
+    nextEl: '.reviews__button--next',
+    prevEl: '.reviews__button--prev',
+  },
+});
+

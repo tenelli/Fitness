@@ -2377,11 +2377,10 @@ button,
     position: absolute;
     min-width: 442px;
     max-width: 442px;
-    top: 55px;
     left: 50%;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%) translateY(40px);
+    -ms-transform: translateX(-50%) translateY(40px);
+    transform: translateX(-50%) translateY(40px);
   }
 
   .gym__photo img {
@@ -2467,8 +2466,10 @@ button,
   }
 
   .advantages__gym {
+    position: absolute;
     min-width: 240px;
     max-width: 240px;
+    top: 20px;
   }
 
   .advantages__wrapper span {
@@ -2677,10 +2678,12 @@ button,
   }
 
   .advantages__enumeration {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     -webkit-column-gap: 53px;
     -moz-column-gap: 53px;
     column-gap: 53px;
-    row-gap: 339px;
+    row-gap: 350px;
   }
 
   .advantages__gym {

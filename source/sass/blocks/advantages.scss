@@ -59,8 +59,9 @@
   justify-content: center;
 
   @media (max-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr;
     column-gap: 53px;
-    row-gap: 339px;
+    row-gap: 350px;
   }
 
   @media (max-width: $mobile-width) {
@@ -75,17 +76,18 @@
   padding: 65px 34px;
 
   @media (min-width: $desktop-width) {
+    position: absolute;
     min-width: 240px;
     max-width: 240px;
+    top: 20px;
   }
 
   @media (min-width: 768px) {
     position: absolute;
     min-width: 442px;
     max-width: 442px;
-    top: 55px;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%) translateY(40px);
   }
 
   @media (max-width: $tablet-width) {

@@ -130,3 +130,43 @@ const swiper2 = new Swiper('.reviews__swiper', {
   },
 });
 
+let formName = document.querySelector('[data-name-input]');
+let formPhone = document.querySelector('[data-tel-input]');
+let form = document.querySelector('[data-form]');
+let isStorageSupport = true;
+let userNameStorage = '';
+let userPhoneStorage = '';
+
+if (form) {
+  try {
+    userNameStorage = localStorage.getItem('formName');
+    userPhoneStorage = localStorage.getItem('formPhone');
+  } catch (err) {
+    isStorageSupport = false;
+  }
+}
+
+if (userNameStorage) {
+  formName.value = userNameStorage;
+  formPhone.value = userPhoneStorage;
+}
+
+function checkFillInputField(evt) {
+  if (!formName || !formPhone) {
+    evt.preventDefault();
+  } else {
+    if (isStorageSupport) {
+      localStorage.setItem('formName', formName.value);
+      localStorage.setItem('formPhone', formPhone.value);
+    }
+  }
+}
+
+form.addEventListener('submit', checkFillInputField);
+
+// если нужен запрет ввода, а не сообщение валидации
+
+/* formPhone.addEventListener('keyup', function () {
+    formPhone.value = formPhone.value.replace(/[A-Za-zА-Яа-яёЁ]/g, '');
+  });
+*/

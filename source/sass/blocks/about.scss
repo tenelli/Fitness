@@ -1,0 +1,12 @@
+.about {
+  @media (min-width: $desktop-width) {
+    background: linear-gradient(to right, $sapphire 50%, $base-white 50%);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 50px;
+    padding-bottom: 76px;
+    border-top: 1px solid #74819C;
+  }
+}
+
+

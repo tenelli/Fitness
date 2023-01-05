@@ -1,3 +1,110 @@
 .visit {
-  background-color: $sapphire;
+  @media (min-width: $desktop-width) {
+    margin-left: auto;
+    margin-right: 170px;
+    width: 410px;
+  }
+
+  @media (max-width: $tablet-width) {
+    background-color: $sapphire;
+    width: 100%;
+    padding: 70px 163px 70px 133px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 70px 15px;
+  }
+
+
+  h2 {
+    font-family: $alumni-sans;
+    color: $base-white;
+    font-size: 54px;
+    line-height: 84px;
+    font-weight: 800;
+    margin: 0;
+    margin-bottom: 24px;
+    letter-spacing: 0.03em;
+
+    @media (max-width: $tablet-width) {
+      font-size: 42px;
+      line-height: 50px;
+      font-weight: 700;
+      margin-bottom: 50px;
+    }
+
+    @media (max-width: $mobile-width) {
+      font-size: 32px;
+      line-height: 38px;
+      font-weight: 600;
+    }
+  }
+
+  button {
+    width: 100%;
+    cursor: pointer;
+    padding: 21px;
+    outline: none;
+    border: 3px solid $base-white;
+    background-color: transparent;
+    text-transform: uppercase;
+    color: $base-white;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+
+    @media (max-width: $tablet-width) {
+      width: 472px;
+    }
+
+    @media (max-width: $mobile-width) {
+      width: 100%;
+    }
+  }
+}
+
+.visit__input-wrapper {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+
+  @media (max-width: $tablet-width) {
+    gap: 60px;
+  }
+
+  @media (max-width: $mobile-width) {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  input {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #74819C;
+    color: $base-white;
+    font-family: $roboto-condensed;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+    width: 190px;
+
+    @media (max-width: $tablet-width) {
+      width: 206px;
+    }
+
+    @media (max-width: $mobile-width) {
+      width: 100%;
+    }
+  }
+
+  input::placeholder {
+    color: $base-white;
+    font-family: $roboto-condensed;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+  }
 }

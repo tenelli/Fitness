@@ -50,7 +50,6 @@
     width: 100%;
     flex-direction: column;
   }
-
 }
 
 .stock__description {
@@ -127,10 +126,9 @@
 
     img {
       object-fit: cover;
-      width: 100%
+      width: 100%;
     }
   }
-
 }
 
 .stock__options-wrapper {
@@ -196,13 +194,25 @@
     align-items: center;
     gap: 30px;
   }
-
 }
 
 .stock__button {
   cursor: pointer;
   background-color: transparent;
   border: none;
+
+  &:hover a,
+  &:focus-within a {
+    color: $egyptian-blue;
+    border-color: $egyptian-blue;
+    outline: none;
+  }
+
+  &:active a {
+    color: $sapphire;
+    border-color: $sapphire;
+  }
+
 
   a {
     cursor: pointer;
@@ -219,6 +229,18 @@
   &--promo {
     position: absolute;
     bottom: 35px;
+
+    &:hover a,
+    &:focus-within a {
+      color: $bright-turquoise;
+      border-color: $bright-turquoise;
+      outline: none;
+    }
+
+    &:active a {
+      color: $crimson;
+      border-color: $crimson;
+    }
 
     a {
       color: $resolution-blue;

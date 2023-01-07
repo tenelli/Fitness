@@ -69,7 +69,7 @@
       content: "";
       width: 1px;
       height: 102px;
-      background-color: #74819C;
+      background-color: $light-slate-grey;
       top: 0;
       right: -60px;
 
@@ -108,6 +108,14 @@
     font-size: 14px;
     line-height: 21px;
     font-weight: 400;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &:active {
+      color: $bright-turquoise;
+    }
 
     @media (max-width: $tablet-width) {
       font-size: 18px;

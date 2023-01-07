@@ -82,6 +82,23 @@
     font-weight: 700;
     letter-spacing: 0.05em;
 
+    &:hover,
+    &:focus {
+      color: $bright-turquoise;
+      border-color: $bright-turquoise;
+      border-radius: 10px;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &:active {
+      color: $egyptian-blue;
+      border-color: $egyptian-blue;
+      border-radius: 30px;
+    }
+
     @media (max-width: $tablet-width) {
       padding-top: 16px;
       padding-bottom: 16px;
@@ -93,7 +110,7 @@
 
 .promo__picture {
   background-color: $midnight-express;
-    width: 660px;
+  width: 660px;
 
   @media (max-width: $tablet-width) {
     width: 386px;
@@ -198,7 +215,8 @@
   }
 }
 
-.promo__date span, .promo__time span {
+.promo__date span,
+.promo__time span {
   color: $base-white;
   font-family: $roboto-condensed;
   font-size: 40px;

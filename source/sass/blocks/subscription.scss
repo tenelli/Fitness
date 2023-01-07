@@ -188,18 +188,25 @@
 .subscription__rate:active {
   border-image-source: $border-gradient;
   border-image-slice: 26;
+}
 
+.subscription__rate:hover,
+.subscription__rate:focus-within {
   .subscription__buy-button {
     background: $border-gradient;
     border-color: $base-white;
     color: $base-white;
+    outline: none;
+  }
+
+  .subscription__buy-button:hover,
+  .subscription__buy-button:active {
+    color: $bright-turquoise;
   }
 }
 
-.subscription__rate:active {
-  .subscription__buy-button {
-    color: $bright-turquoise;
-  }
+.subscription__buy-button:active {
+  border-radius: 30px;
 }
 
 .subscription__tabs-wrapper {
@@ -208,7 +215,7 @@
   margin-right: auto;
   display: flex;
   justify-content: space-between;
-  border-bottom: 2px solid rgba(120, 120, 120, 0.2);
+  border-bottom: 2px solid $border-grey;
   margin-bottom: 39px;
 
   @media (max-width: $tablet-width) {
@@ -224,7 +231,7 @@
 
 .subscription__tab {
   span {
-    color: rgba(16, 38, 84, 0.5);
+    color: $opacity-sapphire;
     font-family: $roboto-condensed;
     font-size: 20px;
     line-height: 30px;
@@ -241,7 +248,12 @@
     }
   }
 
-  &:hover span {
+  &:focus {
+    outline: none;
+  }
+
+  &:hover span,
+  &:focus span {
     color: $crimson;
   }
 }

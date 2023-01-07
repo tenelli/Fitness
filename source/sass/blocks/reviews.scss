@@ -90,7 +90,7 @@
   }
 }
 
-.review__description {
+.reviews__description {
   color: $base-white;
 
   span {
@@ -130,7 +130,18 @@
   border-color: transparent;
   background-color: transparent;
   top: 50%;
-  transform: translateY(-20px);
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+
+
+  &:hover {
+    outline: 1px solid $solitude;
+  }
+
+  &:focus {
+    outline: 1px solid $solitude;
+  }
 
   &::before {
     position: absolute;
@@ -138,6 +149,7 @@
     width: 16px;
     height: 32px;
     background-image: url("../img/arrow.svg");
+    top: 8px;
   }
 }
 

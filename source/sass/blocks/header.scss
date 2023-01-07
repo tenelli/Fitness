@@ -19,7 +19,9 @@
   display: block;
 
   svg {
-    @media (min-width: $desktop-width)  {
+    fill: $base-white;
+
+    @media (min-width: $desktop-width) {
       width: 122px;
       height: 44px;
     }
@@ -49,6 +51,16 @@
   font-weight: 600;
   line-height: 31px;
   letter-spacing: 0.03em;
+
+  &:hover,
+  &:focus {
+    color: $bright-turquoise;
+    outline: none;
+  }
+
+  &:active {
+    color: $malibu;
+  }
 
   @media (max-width: $tablet-width) {
     font-size: 24px;
@@ -177,6 +189,23 @@
   font-size: 12px;
   line-height: 14px;
   font-weight: 700;
+
+  @media (min-width: $desktop-width) {
+    max-width: 400px;
+  }
+
+  &:hover,
+  &:focus {
+    border-color: $bright-turquoise;
+    color: $bright-turquoise;
+    border-radius: 5%;
+  }
+
+  &:active {
+    border-color: $egyptian-blue;
+    color: $egyptian-blue;
+    border-radius: 10%;
+  }
 }
 
 .header__button {

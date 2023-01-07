@@ -54,6 +54,17 @@
     font-weight: 700;
     letter-spacing: 0.05em;
 
+    &:hover,
+    &:focus {
+      border-color: $screamin-green;
+      color: $screamin-green;
+    }
+
+    &:focus {
+      border-color: $drover;
+      color: $drover;
+    }
+
     @media (max-width: $tablet-width) {
       width: 472px;
     }
@@ -83,13 +94,19 @@
     outline: none;
     border: none;
     padding-bottom: 10px;
-    border-bottom: 1px solid #74819C;
+    border-bottom: 1px solid $light-slate-grey;
     color: $base-white;
     font-family: $roboto-condensed;
     font-size: 14px;
     line-height: 16px;
     font-weight: 400;
     width: 190px;
+
+    &:hover,
+    &:focus,
+    &:active {
+      border-color: $screamin-green;
+    }
 
     @media (max-width: $tablet-width) {
       width: 206px;

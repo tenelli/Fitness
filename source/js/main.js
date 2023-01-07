@@ -1,15 +1,19 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import './vendor/swiper.js';
+import {checkTrainersSwiper, checkReviewsSwiper} from './vendor.js';
 
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
 
+
   // Utils
   // ---------------------------------
 
   iosVhFix();
+  checkTrainersSwiper();
+  checkReviewsSwiper();
 
   // Modules
   // ---------------------------------
@@ -87,48 +91,6 @@ if (tabs && options) {
     });
   }
 }
-
-
-/* global Swiper */
-/* eslint no-undef: "error" */
-
-const swiper1 = new Swiper('.trainers__swiper', {
-  direction: 'horizontal',
-  loop: true,
-  allowTouchMove: true,
-  autoHeight: true,
-  breakpoints: {
-    320: {
-      slidesPerView: 1,
-      spaceBetween: 30,
-    },
-    768: {
-      slidesPerView: 2,
-      spaceBetween: 30,
-    },
-    1200: {
-      slidesPerView: 4,
-      spaceBetween: 40,
-    },
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  simulateTouch: false,
-  grabCursor: false,
-});
-
-
-const swiper2 = new Swiper('.reviews__swiper', {
-  direction: 'horizontal',
-  loop: false,
-  autoHeight: true,
-  navigation: {
-    nextEl: '.reviews__button--next',
-    prevEl: '.reviews__button--prev',
-  },
-});
 
 let formName = document.querySelector('[data-name-input]');
 let formPhone = document.querySelector('[data-tel-input]');

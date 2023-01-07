@@ -78,6 +78,15 @@
 .trainers__button {
   background-color: transparent;
   border: none;
+
+  &:hover {
+    border-bottom: 1px solid $solitude;
+  }
+
+  &:focus-within {
+    outline: 1px solid $solitude;
+    border: none;
+  }
 }
 
 .trainers__button--prev {
@@ -168,7 +177,6 @@
   }
 }
 
-
 .trainers__card {
   cursor: pointer;
   position: relative;
@@ -188,7 +196,8 @@
     min-height: 274px;
   }
 
-  &:hover, &:focus-visible {
+  &:hover,
+  &:focus-visible {
     .trainers__picture p {
       display: none;
     }
@@ -203,7 +212,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(16, 38, 84, 0.89);
+  background-color: $sapphire-lighter;
   height: 294px;
   padding: 58px 20px;
   overflow: auto;
@@ -246,7 +255,7 @@
 
   span {
     display: block;
-    color: #B6BDCC;
+    color: $sprindle;
     font-family: $roboto-condensed;
     font-size: 16px;
     line-height: 24px;
@@ -270,4 +279,3 @@
     }
   }
 }
-

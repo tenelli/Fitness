@@ -81,7 +81,7 @@
     min-width: 290px;
     padding: 10px;
     padding-top: 40px;
-    padding-bottom: 0px;
+    padding-bottom: 0;
     min-height: 384px;
   }
 
@@ -240,6 +240,8 @@
 }
 
 .subscription__tab {
+  cursor: pointer;
+
   span {
     color: $opacity-sapphire;
     font-family: $roboto-condensed;

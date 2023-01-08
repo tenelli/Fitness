@@ -162,7 +162,7 @@
     content: "";
     width: 16px;
     height: 32px;
-    background-image: url("../img/arrow.svg");
+    background-image: url("../img/svg/arrow.svg");
     background-repeat: no-repeat;
     top: 8px;
 
@@ -213,4 +213,15 @@
   &::before {
     transform: rotate(180deg) translateX(100%);
   }
+}
+
+.reviews__block--no-js {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 30px;
+}
+
+.reviews__button--no-js {
+  display: none;
 }

@@ -226,16 +226,6 @@
   }
 }
 
-.promo__time p {
-  &::after {
-    width: 88px;
-
-    @media (max-width: $tablet-width) {
-      width: 56px;
-    }
-  }
-}
-
 .promo__date-wrapper {
   margin-bottom: 12px;
 
@@ -299,5 +289,13 @@
 
   @media (max-width: $mobile-width) {
     margin-bottom: -2px;
+  }
+
+  &::after {
+    width: 88px;
+
+    @media (max-width: $tablet-width) {
+      width: 56px;
+    }
   }
 }

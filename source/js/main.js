@@ -132,3 +132,28 @@ form.addEventListener('submit', checkFillInputField);
     formPhone.value = formPhone.value.replace(/[A-Za-zА-Яа-яёЁ]/g, '');
   });
 */
+
+const trainersBlock = document.querySelector('.trainers__block');
+if (trainersBlock) {
+  trainersBlock.classList.remove('trainers__block--no-js');
+}
+
+const trainersButton = document.querySelectorAll('.trainers__button');
+if (trainersButton) {
+  trainersButton.forEach((button) => {
+    button.classList.remove('trainers__button--no-js');
+  });
+}
+
+
+const reviewsBlock = document.querySelector('.reviews__block');
+if (reviewsBlock) {
+  reviewsBlock.classList.remove('reviews__block--no-js');
+}
+
+const reviewsButton = document.querySelectorAll('.reviews__button');
+if (reviewsButton) {
+  reviewsButton.forEach((button) => {
+    button.classList.remove('reviews__button--no-js');
+  });
+}

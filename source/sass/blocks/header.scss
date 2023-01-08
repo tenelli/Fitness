@@ -20,6 +20,21 @@
 .header__logo {
   display: block;
 
+  @media (min-width: $desktop-width) {
+    width: 122px;
+    height: 44px;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 82px;
+    height: 17px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 69px;
+    height: 24px;
+  }
+
   svg {
     fill: $base-white;
 
@@ -119,7 +134,7 @@
       line-height: 32px;
       position: static;
       text-align: right;
-      margin-top: 65px;
+      margin-top: 72px;
       margin-right: 5px;
     }
   }

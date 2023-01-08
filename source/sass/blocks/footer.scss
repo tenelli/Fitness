@@ -4,8 +4,8 @@
   padding-bottom: 27px;
 
   @media (max-width: $tablet-width) {
-    padding-top: 45px;
-    padding-bottom: 44px;
+    padding-top: 38px;
+    padding-bottom: 38px;
   }
 
   @media (max-width: $mobile-width) {
@@ -16,6 +16,10 @@
 .footer__navigation {
   display: flex;
   gap: 40px;
+
+  @media (max-width: $tablet-width) {
+    gap: 30px;
+  }
 
   @media (max-width: $mobile-width) {
     gap: 71px;

@@ -19,12 +19,14 @@
     img {
       min-width: 660px;
       max-width: 660px;
+      height: 401px;
     }
   }
 
   @media (min-width: 768px) {
     img {
       width: 678px;
+      height: 345px;
     }
   }
 
@@ -69,7 +71,7 @@
     max-width: 266px;
     height: 167px;
     left: 206px;
-    top: 283px;
+    top: 258px;
 
     img {
       width: 266px;
@@ -163,7 +165,8 @@
       font-size: 42px;
       line-height: 50px;
       margin-top: 0;
-      margin-bottom: 6px;
+      margin-left: -20px;
+      margin-bottom: 0;
       text-align: center;
     }
 
@@ -186,6 +189,7 @@
 
     @media (max-width: $tablet-width) {
       text-align: center;
+      margin-bottom: 33px;
     }
 
     @media (max-width: $mobile-width) {
@@ -210,9 +214,11 @@
     margin-bottom: 9px;
 
     @media (max-width: $tablet-width) {
-      max-width: 502px;
+      max-width: 510px;
+      margin-left: auto;
+      margin-right: auto;
       text-align: center;
-      margin-bottom: 50px;
+      margin-bottom: 45px;
     }
 
     @media (max-width: $mobile-width) {

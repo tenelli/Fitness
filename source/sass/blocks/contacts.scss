@@ -2,7 +2,7 @@
   padding-left: 120px;
 
   @media (max-width: $tablet-width) {
-    padding: 70px 179px 70px 133px;
+    padding: 60px 179px 62px 133px;
   }
 
   @media (max-width: $mobile-width) {
@@ -22,7 +22,7 @@
     @media (max-width: $tablet-width) {
       font-size: 42px;
       line-height: 50px;
-      margin-bottom: 50px;
+      margin-bottom: 35px;
     }
 
     @media (max-width: $mobile-width) {
@@ -58,7 +58,7 @@
     row-gap: 20px;
 
     @media (max-width: $tablet-width) {
-      gap: 35px;
+      column-gap: 35px;
     }
   }
 
@@ -75,7 +75,8 @@
       right: -60px;
 
       @media (max-width: $tablet-width) {
-        right: -48px;
+        right: -50px;
+        top: 6px;
         height: 129px;
       }
 
@@ -97,7 +98,7 @@
     @media (max-width: $tablet-width) {
       font-size: 20px;
       line-height: 30px;
-      margin-bottom: 20px;
+      margin-bottom: 5px;
     }
   }
 

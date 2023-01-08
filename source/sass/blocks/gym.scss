@@ -52,8 +52,8 @@
 
   @media (min-width: 1200px) {
     min-width: 364px;
-    left: 50%;
-    transform: translateX(-50%);
+    left: -63px;
+    top: 289px;
 
     img {
       min-width: 364px;
@@ -108,7 +108,7 @@
     background-repeat: no-repeat;
     width: 100px;
     height: 100px;
-    top: 35%;
+    top: 30%;
 
     @media (max-width: $tablet-width) {
       background-image: url("../img/play_tablet.svg");
@@ -129,12 +129,12 @@
   justify-self: center;
 
   @media (min-width: 1350px) {
-    margin-right: 85px;
+    margin-right: 80px;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 360px;
-    margin-left: 60px;
+    margin-left: 63px;
     margin-right: 35px;
   }
 
@@ -150,8 +150,8 @@
   }
 
   h2 {
-    margin-top: 49px;
-    margin-bottom: 25px;
+    margin-top: 38px;
+    margin-bottom: 7px;
     font-family: $alumni-sans;
     font-size: 48px;
     line-height: 58px;
@@ -177,7 +177,7 @@
 
   h3 {
     margin: 0;
-    margin-bottom: 55px;
+    margin-bottom: 40px;
     font-family: $roboto-condensed;
     font-size: 18px;
     line-height: 27px;
@@ -206,6 +206,8 @@
     line-height: 24px;
     font-weight: 300;
     color: $sapphire;
+    margin: 0;
+    margin-bottom: 9px;
 
     @media (max-width: $tablet-width) {
       max-width: 502px;

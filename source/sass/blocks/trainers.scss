@@ -1,5 +1,4 @@
 .trainers {
-  padding-top: 106px;
   padding-bottom: 91px;
 
   @media (max-width: $tablet-width) {
@@ -121,8 +120,13 @@
   }
 }
 
+.trainers__button--prev.swiper-button-prev::after {
+  left: -2px;
+}
+
 .trainers__button--next.swiper-button-next::after {
   transform: rotate(180deg);
+  left: 13px;
 }
 
 .trainers__picture {
@@ -146,7 +150,7 @@
   p {
     position: absolute;
     margin: 0;
-    bottom: 30px;
+    bottom: 21px;
     left: 20px;
     right: 20px;
     text-align: center;
@@ -214,7 +218,7 @@
   left: 0;
   background-color: $sapphire-lighter;
   height: 294px;
-  padding: 58px 20px;
+  padding: 52px 20px 50px;
   overflow: auto;
   opacity: 0;
 
@@ -246,10 +250,10 @@
     margin: 0;
     font-family: $roboto-condensed;
     font-size: 18px;
-    line-height: 27px;
+    line-height: 25px;
     font-weight: 700;
     color: $base-white;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     text-align: center;
   }
 
@@ -261,14 +265,16 @@
     line-height: 24px;
     font-weight: 400;
     text-align: center;
-    margin-bottom: 45px;
+    margin-bottom: 30px;
   }
 
   ul {
     margin: 0;
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 14px;
+    list-style: none;
+    margin-left: 11px;
 
     li {
       color: $base-white;
@@ -276,6 +282,18 @@
       font-size: 14px;
       line-height: 21px;
       font-weight: 400;
+      position: relative;
+    }
+
+    li::before {
+      position: absolute;
+      content: "";
+      width: 6px;
+      height: 6px;
+      background-color: $base-white;
+      border-radius: 50%;
+      top: 7px;
+      left: -16px;
     }
   }
 }

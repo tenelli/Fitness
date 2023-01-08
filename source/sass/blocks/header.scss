@@ -1,7 +1,7 @@
 .header {
   background: $header-gradient;
   padding-top: 30px;
-  padding-bottom: 96px;
+  padding-bottom: 51px;
 
   @media (max-width: $tablet-width) {
     background: $header-gradient-tablet;
@@ -38,11 +38,6 @@
   }
 }
 
-.header__top {
-  display: flex;
-  justify-content: space-between;
-}
-
 .header__phone {
   display: block;
   color: $base-white;
@@ -77,9 +72,12 @@
 }
 
 .header__main {
-  display: flex;
-  justify-content: center;
   position: relative;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  justify-content: space-between;
+  }
 
   span {
     display: block;
@@ -87,12 +85,12 @@
     color: $base-white;
     margin-left: 119px;
     font-family: $alumni-sans;
-    font-size: 48px;
-    line-height: 58px;
+    font-size: 42px;
+    line-height: 52px;
     font-weight: 600;
     letter-spacing: 0.03em;
-    margin-bottom: 25px;
-    margin-top: 98px;
+    margin-bottom: 13px;
+    margin-top: 138px;
 
     @media (max-width: $tablet-width) {
       font-size: 34px;
@@ -117,7 +115,8 @@
     font-size: 92px;
     line-height: 110px;
     text-align: right;
-    margin-bottom: 80px;
+    margin-bottom: 49px;
+    letter-spacing: 0.05em;
 
     @media (max-width: $tablet-width) {
       text-transform: none;
@@ -130,8 +129,8 @@
 
 .header__list {
   position: absolute;
-  left: 18px;
-  top: 288px;
+  left: 20px;
+  top: 325px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -149,8 +148,7 @@
 }
 
 .header__picture {
-  margin-top: -21px;
-  margin-left: 64px;
+  margin-top: 21px;
 
   @media (max-width: $tablet-width) {
     margin-top: 25px;
@@ -164,7 +162,7 @@
 }
 
 .header__buy {
-  padding: 24px 57px;
+  padding: 20px 48px 19px;
 
   @media (max-width: $tablet-width) {
     padding: 24px 20px;
@@ -191,7 +189,9 @@
   font-weight: 700;
 
   @media (min-width: $desktop-width) {
-    max-width: 400px;
+    min-width: 234px;
+    max-width: 236px;
+    margin-left: 18px;
   }
 
   &:hover,
@@ -223,4 +223,30 @@
   display: flex;
   flex-direction: column;
   align-items: right;
+  margin-left: -21px;
+  margin-right: 64px;
+}
+
+
+.header__wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+//опциональный визуальный фикс для крупного экрана
+.header__container {
+  @media (min-width: 1500px) {
+    display: flex;
+    justify-content: center;
+
+    .header__phone {
+      margin-left: 46px;
+    }
+
+    .header__list {
+      left: -20px;
+    }
+  }
 }

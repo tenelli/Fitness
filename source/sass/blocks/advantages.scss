@@ -1,7 +1,7 @@
 .advantages {
   background-color: $ghost-white;
   padding-top: 146px;
-  padding-bottom: 91px;
+  padding-bottom: 7px;
 
   @media (max-width: $tablet-width) {
     padding: 100px 0;
@@ -20,7 +20,7 @@
     font-weight: 600;
     letter-spacing: 0.03em;
     margin: 0;
-    margin-bottom: 56px;
+    margin-left: 10px;
 
     @media (max-width: $tablet-width) {
       font-size: 42px;
@@ -35,27 +35,15 @@
   }
 }
 
-.advantages__container {
-  margin: 0 auto;
-  padding: 0 183px;
-
-  @media (max-width: $tablet-width) {
-    padding: 0 45px;
-  }
-
-  @media (max-width: $mobile-width) {
-    padding: 0;
-    margin: 0;
-    width: 100%;
-  }
-}
-
 .advantages__enumeration {
   position: relative;
   display: grid;
   grid-template-columns: 340px 340px;
-  column-gap: 367px;
+  column-gap: 362px;
+  row-gap: 25px;
   grid-template-rows: 1fr 1fr;
+  margin-left: 60px;
+  margin-right: 60px;
   justify-content: center;
 
   @media (max-width: $tablet-width) {
@@ -73,21 +61,21 @@
 .advantages__gym {
   background-color: $resolution-blue;
   color: $base-white;
-  padding: 65px 34px;
+  padding: 50px 34px 58px;
 
   @media (min-width: $desktop-width) {
     position: absolute;
     min-width: 240px;
     max-width: 240px;
-    top: 20px;
+    top: 55px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   @media (min-width: 768px) {
     position: absolute;
     min-width: 442px;
     max-width: 442px;
-    left: 50%;
-    transform: translateX(-50%) translateY(40px);
   }
 
   @media (max-width: $tablet-width) {
@@ -104,14 +92,14 @@
   span {
     display: block;
     font-size: 74px;
-    line-height: 111px;
+    line-height: 81px;
     font-weight: 700;
     text-align: center;
   }
 
   h3 {
     margin: 0;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     font-size: 26px;
     line-height: 39px;
     font-weight: 700;
@@ -129,8 +117,8 @@
 
 
 .advantages__option {
-  padding-top: 33px;
-  padding-bottom: 33px;
+  padding-top: 28px;
+  padding-bottom: 76px;
   display: flex;
   gap: 30px;
 
@@ -144,7 +132,7 @@
   h3 {
     margin: 0;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     font-family: $roboto-condensed;
     color: $sapphire;
     font-size: 22px;
@@ -179,10 +167,6 @@
   span {
     display: block;
 
-    @media (min-width: $desktop-width) {
-      margin-left: 19px;
-    }
-
     @media (max-width: $mobile-width) {
       text-align: center;
     }
@@ -202,6 +186,7 @@
     line-height: 21px;
     font-weight: 400;
     color: $persian-blue;
+    margin-top: -22px;
   }
 }
 
@@ -218,5 +203,11 @@
       opacity: 0.2;
       bottom: 0;
     }
+  }
+}
+
+.advantages__wrapper--special span {
+  @media (min-width: $desktop-width) {
+    margin-left: 19px;
   }
 }

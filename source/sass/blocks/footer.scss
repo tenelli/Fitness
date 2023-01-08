@@ -1,7 +1,7 @@
 .footer {
   background-color: $black-russian;
-  padding-top: 41px;
-  padding-bottom: 32px;
+  padding-top: 35px;
+  padding-bottom: 27px;
 
   @media (max-width: $tablet-width) {
     padding-top: 45px;
@@ -138,7 +138,6 @@
 .footer__logo {
   display: block;
   margin-right: 237px;
-  margin-top: -5px;
 
   &:hover svg,
   &:focus-visible svg {

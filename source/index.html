@@ -14,32 +14,32 @@
   <body>
     <div class="wrapper">
       <header class="header">
-        <div class="container">
-          <div class="header__top">
+        <div class="container header__container">
+          <div class="header__main">
             <a class="header__logo">
               <svg width="122" height="44" role="img" aria-label="Логотип сайта в виде надписи Supergym.">
                 <use xlink:href="img/sprite/sprite.svg#logo"></use>
               </svg>
             </a>
-            <a class="header__phone unselectable" href="tel:+78005555555" tabindex="0">8-800-555-55-55</a>
-          </div>
-          <div class="header__main">
             <ul class="header__list">
               <li>Тренажерный зал</li>
               <li>Групповые занятия</li>
               <li>Кардио-зона</li>
             </ul>
-            <div class="header__description">
-              <span>Омск</span>
-              <h1>Фитнес<br> центр</h1>
-              <a class="header__buy unselectable" href="#subscription">Купить абонемент</a>
+            <div class="header__wrapper">
+              <div class="header__description">
+                <span>Омск</span>
+                <h1>Фитнес<br> центр</h1>
+                <a class="header__buy unselectable" href="#subscription">Купить абонемент</a>
+              </div>
+              <div class="header__picture">
+                <picture>
+                  <source type="image/webp" srcset="./img/superman.webp, ./img/superman@2x.webp 2x">
+                  <img src="./img/superman.jpg" srcset="./img/superman@2x.jpg 2x" width="500" height="556" alt="Мужчина, косплеящий супермена." loading="lazy">
+                </picture>
+              </div>
             </div>
-            <div class="header__picture">
-              <picture>
-                <source type="image/webp" srcset="./img/superman.webp, ./img/superman@2x.webp 2x">
-                <img src="./img/superman.jpg" srcset="./img/superman@2x.jpg 2x" width="500" height="556" alt="Мужчина, косплеящий супермена." loading="lazy">
-              </picture>
-            </div>
+            <a class="header__phone unselectable" href="tel:+78005555555" tabindex="0">8-800-555-55-55</a>
           </div>
           <a class="header__button unselectable" href="#subscription">Купить абонемент</a>
         </div>
@@ -50,8 +50,8 @@
             <div class="gym__description">
               <h2>Тренажерный зал</h2>
               <h3>Просторный зал площадью 900 кв/м</h3>
-              <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
-              <p>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
+              <p>Supergym&nbsp;&mdash; самый большой фитнес центр за&nbsp;Уралом и&nbsp;идеальное место для укрепления тела и&nbsp;здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
+              <p>В&nbsp;зале расположены отдельная зона для Crossfit и&nbsp;кардио-зона с&nbsp;40&nbsp;тренажерами. Также в&nbsp;фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
             </div>
             <div class="gym__demonstration">
               <div class="gym__photo">
@@ -408,17 +408,17 @@
           </div>
         </section>
         <section class="advantages">
-          <div class="advantages__container">
+          <div class="container">
             <h2>Наши преимущества</h2>
             <div class="advantages__enumeration">
               <div class="advantages__option advantages__option--aspect">
-                <div class="advantages__wrapper">
+                <div class="advantages__wrapper advantages__wrapper--special">
                   <span>900</span>
                   <span>кв/м</span>
                 </div>
                 <div class="advantages__description">
                   <h3>Площадь</h3>
-                  <p>Занимайтесь без очередей и толпучки</p>
+                  <p>Занимайтесь без очередей и&nbsp;толпучки</p>
                 </div>
               </div>
               <div class="advantages__option advantages__option--aspect">
@@ -428,22 +428,22 @@
                 </div>
                 <div class="advantages__description">
                   <h3>Собственная парковка</h3>
-                  <p>Вы всегда найдете место для своей машины на нашей парковке</p>
+                  <p>Вы&nbsp;всегда найдете место для своей машины на&nbsp;нашей парковке</p>
                 </div>
               </div>
               <div class="advantages__gym">
                 <span>100</span>
                 <h3>Тренажеров</h3>
-                <p>Современные тренажеры на все группы мышц</p>
+                <p>Современные тренажеры на&nbsp;все группы мышц</p>
               </div>
               <div class="advantages__option">
-                <div class="advantages__wrapper">
+                <div class="advantages__wrapper advantages__wrapper--special">
                   <span>350</span>
                   <span>мест</span>
                 </div>
                 <div class="advantages__description">
                   <h3>Комфорт</h3>
-                  <p>Просторные раздевалки,душевые, фен, Wi-Fi, кулеры</p>
+                  <p>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
                 </div>
               </div>
               <div class="advantages__option">
@@ -453,7 +453,7 @@
                 </div>
                 <div class="advantages__description">
                   <h3>Тренерский опыт</h3>
-                  <p>Добивайтесь своих целей быстрее с профессиональным тренером</p>
+                  <p>Добивайтесь своих целей быстрее с&nbsp;профессиональным тренером</p>
                 </div>
               </div>
             </div>
@@ -467,7 +467,7 @@
                 <div class="stock__description">
                   <p>Год</p>
                   <span>4999</span>
-                  <h3>Безлимитный абонемент в тренажерный зал</h3>
+                  <h3>Безлимитный абонемент в&nbsp;тренажерный зал</h3>
                   <div class="stock__button">
                     <a class="unselectable" href="#">Подробнее</a>
                   </div>
@@ -482,14 +482,14 @@
               <div class="stock__options-wrapper">
                 <div class="stock__option">
                   <p>Месяц бесплатно</p>
-                  <h3>Приведи друга, получи абонемент в подарок</h3>
+                  <h3>Приведи друга, получи абонемент в&nbsp;подарок</h3>
                   <div class="stock__button stock__button--promo">
                     <a class="unselectable" href="#">Подробнее</a>
                   </div>
                 </div>
                 <div class="stock__option">
                   <p>Скидка 20%</p>
-                  <h3>Корпоративный фитнес с командой</h3>
+                  <h3>Корпоративный фитнес с&nbsp;командой</h3>
                   <div class="stock__button stock__button--promo">
                     <a class="unselectable" href="#">Подробнее</a>
                   </div>
@@ -514,7 +514,7 @@
                     </div>
                     <div class="reviews__description">
                       <span>Анна Орлова</span>
-                      <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+                      <p>&laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</p>
                     </div>
                   </div>
                   <div class="swiper-slide reviews__comment">
@@ -526,7 +526,7 @@
                     </div>
                     <div class="reviews__description">
                       <span>Второй комментатор</span>
-                      <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+                      <p>&laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</p>
                     </div>
                   </div>
                 </div>

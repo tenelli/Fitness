@@ -1514,9 +1514,9 @@ button,
 }
 
 .header {
-  background: conic-gradient(from 130.31deg at 16.03% 39.06%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
+  background: conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
   padding-top: 30px;
-  padding-bottom: 96px;
+  padding-bottom: 51px;
 }
 
 .header__logo {
@@ -1525,15 +1525,6 @@ button,
 
 .header__logo svg {
   fill: #ffffff;
-}
-
-.header__top {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
 }
 
 .header__phone {
@@ -1557,12 +1548,6 @@ button,
 }
 
 .header__main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   position: relative;
 }
 
@@ -1572,12 +1557,12 @@ button,
   color: #ffffff;
   margin-left: 119px;
   font-family: "Alumni Sans", "Arial", sans-serif;
-  font-size: 48px;
-  line-height: 58px;
+  font-size: 42px;
+  line-height: 52px;
   font-weight: 600;
   letter-spacing: 0.03em;
-  margin-bottom: 25px;
-  margin-top: 98px;
+  margin-bottom: 13px;
+  margin-top: 138px;
 }
 
 .header__main h1 {
@@ -1589,13 +1574,14 @@ button,
   font-size: 92px;
   line-height: 110px;
   text-align: right;
-  margin-bottom: 80px;
+  margin-bottom: 49px;
+  letter-spacing: 0.05em;
 }
 
 .header__list {
   position: absolute;
-  left: 18px;
-  top: 288px;
+  left: 20px;
+  top: 325px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -1608,12 +1594,11 @@ button,
 }
 
 .header__picture {
-  margin-top: -21px;
-  margin-left: 64px;
+  margin-top: 21px;
 }
 
 .header__buy {
-  padding: 24px 57px;
+  padding: 20px 48px 19px;
 }
 
 .header__buy,
@@ -1663,12 +1648,14 @@ button,
   -webkit-box-align: right;
   -ms-flex-align: right;
   align-items: right;
+  margin-left: -21px;
+  margin-right: 64px;
 }
 
 .footer {
   background-color: #030a1a;
-  padding-top: 41px;
-  padding-bottom: 32px;
+  padding-top: 35px;
+  padding-bottom: 27px;
 }
 
 .footer__navigation {
@@ -1774,7 +1761,6 @@ button,
 .footer__logo {
   display: block;
   margin-right: 237px;
-  margin-top: -5px;
 }
 
 .footer__logo:hover svg,
@@ -1804,7 +1790,7 @@ button,
   letter-spacing: 0.03em;
   color: #102654;
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 16px;
 }
 
 .subscription__container {
@@ -1826,6 +1812,7 @@ button,
   min-height: 448px;
   border: 7px solid transparent;
   padding: 61px;
+  padding-top: 48px;
 }
 
 .subscription__rate h3 {
@@ -1836,7 +1823,7 @@ button,
   line-height: 40px;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 22px;
+  margin-bottom: 5px;
 }
 
 .subscription__rate p {
@@ -1845,7 +1832,8 @@ button,
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  margin-bottom: 96px;
+  margin: 0;
+  margin-bottom: 67px;
   text-align: center;
 }
 
@@ -1860,7 +1848,7 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-bottom: 59px;
+  margin-bottom: 33px;
 }
 
 .subscription__price span:first-of-type {
@@ -1882,7 +1870,7 @@ button,
   font-size: 100px;
   line-height: 150px;
   font-weight: 700;
-  top: -50px;
+  top: -53px;
   left: 50%;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
@@ -1899,8 +1887,8 @@ button,
   cursor: pointer;
   width: 206px;
   border: 2px solid #102654;
-  padding-top: 27px;
-  padding-bottom: 28px;
+  padding-top: 23px;
+  padding-bottom: 26px;
   text-align: center;
   text-transform: uppercase;
   color: #102654;
@@ -1909,19 +1897,21 @@ button,
   line-height: 14px;
   font-weight: 700;
   letter-spacing: 0.05em;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .subscription__rate:hover,
 .subscription__rate:focus-within,
 .subscription__rate:active {
-  border-image-source: linear-gradient(148.82deg, #D10A42 0.85%, #00359F 100%);
+  border-image-source: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
   border-image-slice: 26;
 }
 
 .subscription__rate:hover .subscription__buy-button,
 .subscription__rate:focus-within .subscription__buy-button {
-  background: -o-linear-gradient(301.18deg, #D10A42 0.85%, #00359F 100%);
-  background: linear-gradient(148.82deg, #D10A42 0.85%, #00359F 100%);
+  background: -o-linear-gradient(301.18deg, #d10a42 0.85%, #00359f 100%);
+  background: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
   border-color: #ffffff;
   color: #ffffff;
   outline: none;
@@ -1971,7 +1961,7 @@ button,
 
 .subscription__tab.is-active {
   border-bottom: 2px solid #d10a42;
-  padding-bottom: 20px;
+  padding-bottom: 12px;
   margin-bottom: -2px;
 }
 
@@ -1993,8 +1983,8 @@ button,
   width: 321px;
   height: 384px;
   position: absolute;
-  bottom: -215px;
-  right: -108px;
+  bottom: -213px;
+  right: -210px;
   -webkit-transform: rotate(150deg);
   -ms-transform: rotate(150deg);
   transform: rotate(150deg);
@@ -2004,7 +1994,7 @@ button,
 .advantages {
   background-color: #f8f9fc;
   padding-top: 146px;
-  padding-bottom: 91px;
+  padding-bottom: 7px;
 }
 
 .advantages h2 {
@@ -2016,12 +2006,7 @@ button,
   font-weight: 600;
   letter-spacing: 0.03em;
   margin: 0;
-  margin-bottom: 56px;
-}
-
-.advantages__container {
-  margin: 0 auto;
-  padding: 0 183px;
+  margin-left: 10px;
 }
 
 .advantages__enumeration {
@@ -2030,11 +2015,14 @@ button,
   display: grid;
   -ms-grid-columns: 340px 340px;
   grid-template-columns: 340px 340px;
-  -webkit-column-gap: 367px;
-  -moz-column-gap: 367px;
-  column-gap: 367px;
+  -webkit-column-gap: 362px;
+  -moz-column-gap: 362px;
+  column-gap: 362px;
+  row-gap: 25px;
   -ms-grid-rows: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  margin-left: 60px;
+  margin-right: 60px;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -2043,20 +2031,20 @@ button,
 .advantages__gym {
   background-color: #1c3374;
   color: #ffffff;
-  padding: 65px 34px;
+  padding: 50px 34px 58px;
 }
 
 .advantages__gym span {
   display: block;
   font-size: 74px;
-  line-height: 111px;
+  line-height: 81px;
   font-weight: 700;
   text-align: center;
 }
 
 .advantages__gym h3 {
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-size: 26px;
   line-height: 39px;
   font-weight: 700;
@@ -2072,8 +2060,8 @@ button,
 }
 
 .advantages__option {
-  padding-top: 33px;
-  padding-bottom: 33px;
+  padding-top: 28px;
+  padding-bottom: 76px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2083,7 +2071,7 @@ button,
 .advantages__description h3 {
   margin: 0;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   color: #102654;
   font-size: 22px;
@@ -2119,6 +2107,7 @@ button,
   line-height: 21px;
   font-weight: 400;
   color: #2e35ac;
+  margin-top: -22px;
 }
 
 .gym {
@@ -2158,7 +2147,7 @@ button,
   background-repeat: no-repeat;
   width: 100px;
   height: 100px;
-  top: 35%;
+  top: 30%;
 }
 
 .gym__description {
@@ -2167,8 +2156,8 @@ button,
 }
 
 .gym__description h2 {
-  margin-top: 49px;
-  margin-bottom: 25px;
+  margin-top: 38px;
+  margin-bottom: 7px;
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-size: 48px;
   line-height: 58px;
@@ -2179,11 +2168,11 @@ button,
 
 .gym__description h3 {
   margin: 0;
-  margin-bottom: 55px;
+  margin-bottom: 40px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 18px;
   line-height: 27px;
-  font-family: 400;
+  font-weight: 400;
   color: #102654;
 }
 
@@ -2193,10 +2182,12 @@ button,
   line-height: 24px;
   font-weight: 300;
   color: #102654;
+  margin: 0;
+  margin-bottom: 9px;
 }
 
 .promo {
-  padding-top: 120px;
+  padding-top: 118px;
   padding-bottom: 106px;
 }
 
@@ -2223,7 +2214,7 @@ button,
   font-size: 18px;
   line-height: 27px;
   font-weight: 400;
-  margin-bottom: 55px;
+  margin-bottom: 45px;
 }
 
 .promo__description a {
@@ -2231,8 +2222,8 @@ button,
   display: block;
   width: 100%;
   text-align: center;
-  padding-top: 29px;
-  padding-bottom: 29px;
+  padding-top: 25px;
+  padding-bottom: 25px;
   border: 4px solid #ffffff;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   color: #ffffff;
@@ -2274,8 +2265,8 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 50px;
-  margin-bottom: 33px;
+  gap: 60px;
+  margin-bottom: 12px;
 }
 
 .promo__info h3 {
@@ -2287,6 +2278,8 @@ button,
   letter-spacing: 0.03em;
   color: #ffffff;
   margin: 0;
+  margin-top: 3px;
+  margin-left: 13px;
 }
 
 .promo__info p {
@@ -2297,7 +2290,7 @@ button,
   font-size: 18px;
   line-height: 27px;
   font-weight: 400;
-  padding-bottom: 13px;
+  padding-bottom: 5px;
 }
 
 .promo__info p::after {
@@ -2328,12 +2321,16 @@ button,
   align-items: center;
 }
 
+.promo__date span {
+  margin-top: -7px;
+}
+
 .promo__date span,
 .promo__time span {
   color: #ffffff;
   font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-size: 40px;
-  line-height: 60px;
+  font-size: 38px;
+  line-height: 58px;
   font-weight: 700;
 }
 
@@ -2346,8 +2343,15 @@ button,
   font-weight: 400;
 }
 
+.promo__period span:first-of-type {
+  margin-bottom: 3px;
+}
+
+.promo__time p {
+  margin-bottom: -7px;
+}
+
 .trainers {
-  padding-top: 106px;
   padding-bottom: 91px;
 }
 
@@ -2377,7 +2381,7 @@ button,
 }
 
 .trainers__button:hover {
-  border-bottom: 1px solid #E1E4EA;
+  border-bottom: 1px solid #e1e4ea;
 }
 
 .trainers__button:focus-within {
@@ -2404,10 +2408,15 @@ button,
   height: 32px;
 }
 
+.trainers__button--prev.swiper-button-prev::after {
+  left: -2px;
+}
+
 .trainers__button--next.swiper-button-next::after {
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
+  left: 13px;
 }
 
 .trainers__picture {
@@ -2419,7 +2428,7 @@ button,
 .trainers__picture p {
   position: absolute;
   margin: 0;
-  bottom: 30px;
+  bottom: 21px;
   left: 20px;
   right: 20px;
   text-align: center;
@@ -2456,7 +2465,7 @@ button,
   left: 0;
   background-color: rgba(16, 38, 84, 0.89);
   height: 294px;
-  padding: 58px 20px;
+  padding: 52px 20px 50px;
   overflow: auto;
   opacity: 0;
 }
@@ -2465,22 +2474,22 @@ button,
   margin: 0;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 18px;
-  line-height: 27px;
+  line-height: 25px;
   font-weight: 700;
   color: #ffffff;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
   text-align: center;
 }
 
 .trainers__description span {
   display: block;
-  color: #B6BDCC;
+  color: #b6bdcc;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
   text-align: center;
-  margin-bottom: 45px;
+  margin-bottom: 30px;
 }
 
 .trainers__description ul {
@@ -2492,7 +2501,9 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  gap: 24px;
+  gap: 14px;
+  list-style: none;
+  margin-left: 11px;
 }
 
 .trainers__description ul li {
@@ -2501,6 +2512,18 @@ button,
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
+  position: relative;
+}
+
+.trainers__description ul li::before {
+  position: absolute;
+  content: "";
+  width: 6px;
+  height: 6px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  top: 7px;
+  left: -16px;
 }
 
 .stock {
@@ -2528,8 +2551,9 @@ button,
 
 .stock__description {
   background-color: #ed0233;
-  padding: 45px;
+  padding: 35px 45px;
   color: #ffffff;
+  position: relative;
 }
 
 .stock__description p {
@@ -2538,15 +2562,15 @@ button,
   font-size: 28px;
   line-height: 44px;
   font-weight: 700;
-  margin-bottom: 19px;
 }
 
 .stock__description span {
   display: block;
   font-size: 70px;
-  line-height: 109px;
+  line-height: 80px;
   font-weight: 700;
-  margin-bottom: 35px;
+  margin-top: -10px;
+  margin-bottom: 15px;
 }
 
 .stock__description h3 {
@@ -2554,7 +2578,6 @@ button,
   font-size: 18px;
   line-height: 25px;
   font-weight: 400;
-  margin-bottom: 78px;
 }
 
 .stock__picture {
@@ -2575,9 +2598,9 @@ button,
   min-height: 211px;
   border: 7px solid transparent;
   position: relative;
-  border-image-source: linear-gradient(148.82deg, #D10A42 0.85%, #00359F 100%);
+  border-image-source: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
   border-image-slice: 26;
-  padding: 35px;
+  padding: 20px 27px;
 }
 
 .stock__option p {
@@ -2587,7 +2610,7 @@ button,
   font-size: 26px;
   line-height: 35px;
   font-weight: 700;
-  margin-bottom: 20px;
+  margin-bottom: 8px;
 }
 
 .stock__option h3 {
@@ -2613,6 +2636,8 @@ button,
   cursor: pointer;
   background-color: transparent;
   border: none;
+  position: absolute;
+  bottom: 40px;
 }
 
 .stock__button:hover a,
@@ -2630,7 +2655,7 @@ button,
 .stock__button a {
   cursor: pointer;
   color: #ffffff;
-  padding: 5px 0;
+  padding: 5px 0 0;
   border-bottom: 1px solid #ffffff;
   text-transform: uppercase;
   font-size: 14px;
@@ -2641,7 +2666,7 @@ button,
 
 .stock__button--promo {
   position: absolute;
-  bottom: 35px;
+  bottom: 25px;
 }
 
 .stock__button--promo:hover a,
@@ -2664,7 +2689,6 @@ button,
 }
 
 .reviews {
-  padding-top: 117px;
   padding-bottom: 120px;
   text-align: center;
 }
@@ -2678,11 +2702,12 @@ button,
   letter-spacing: 0.03em;
   margin: 0;
   margin-bottom: 37px;
+  margin-left: 5px;
 }
 
 .reviews__comment {
   background-color: #1c3374;
-  padding: 62px;
+  padding: 55px 62px 57px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2695,26 +2720,30 @@ button,
   position: relative;
 }
 
+.reviews__picture {
+  margin-top: 7px;
+}
+
 .reviews__picture img {
   display: block;
   min-width: 80px;
   min-height: 80px;
 }
 
-.review__description {
+.reviews__description {
   color: #ffffff;
 }
 
-.review__description span {
+.reviews__description span {
   display: block;
   font-size: 20px;
   line-height: 30px;
   font-weight: 700;
-  margin-bottom: 25px;
+  margin-bottom: 13px;
   text-align: left;
 }
 
-.review__description p {
+.reviews__description p {
   margin: 0;
   text-align: left;
   font-size: 16px;
@@ -2761,11 +2790,11 @@ button,
 }
 
 .reviews__button--prev {
-  left: 0;
+  left: -25px;
 }
 
 .reviews__button--next {
-  right: 0;
+  right: -25px;
 }
 
 .reviews__button--next::before {
@@ -2786,7 +2815,7 @@ button,
   font-weight: 600;
   letter-spacing: 0.03em;
   margin: 0;
-  margin-bottom: 43px;
+  margin-bottom: 38px;
 }
 
 .contacts__list {
@@ -2808,7 +2837,10 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  gap: 30px;
+  -webkit-column-gap: 30px;
+  -moz-column-gap: 30px;
+  column-gap: 30px;
+  row-gap: 20px;
 }
 
 .contacts__list li:first-child {
@@ -2831,7 +2863,6 @@ button,
   font-size: 16px;
   line-height: 24px;
   font-weight: 700;
-  margin-bottom: 15px;
 }
 
 .contacts__item a,
@@ -2860,14 +2891,14 @@ button,
   line-height: 84px;
   font-weight: 800;
   margin: 0;
-  margin-bottom: 24px;
+  margin-bottom: 18px;
   letter-spacing: 0.03em;
 }
 
 .visit button {
   width: 100%;
   cursor: pointer;
-  padding: 21px;
+  padding: 17px;
   outline: none;
   border: 3px solid #ffffff;
   background-color: transparent;
@@ -2895,14 +2926,14 @@ button,
   display: -ms-flexbox;
   display: flex;
   gap: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 }
 
 .visit__input-wrapper input {
   background-color: transparent;
   outline: none;
   border: none;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
   border-bottom: 1px solid #74819c;
   color: #ffffff;
   font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -3012,10 +3043,6 @@ button,
     position: absolute;
     min-width: 442px;
     max-width: 442px;
-    left: 50%;
-    -webkit-transform: translateX(-50%) translateY(40px);
-    -ms-transform: translateX(-50%) translateY(40px);
-    transform: translateX(-50%) translateY(40px);
   }
 
   .gym__photo img {
@@ -3117,9 +3144,29 @@ button,
     height: 44px;
   }
 
+  .header__main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
   .header__buy,
   .header__button {
-    max-width: 400px;
+    min-width: 234px;
+    max-width: 236px;
+    margin-left: 18px;
+  }
+
+  .header__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
   }
 
   .subscription__option {
@@ -3135,11 +3182,11 @@ button,
     position: absolute;
     min-width: 240px;
     max-width: 240px;
-    top: 20px;
-  }
-
-  .advantages__wrapper span {
-    margin-left: 19px;
+    top: 55px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
   }
 
   .advantages__option--aspect {
@@ -3156,6 +3203,10 @@ button,
     bottom: 0;
   }
 
+  .advantages__wrapper--special span {
+    margin-left: 19px;
+  }
+
   .about {
     background: -webkit-gradient(linear, left top, right top, color-stop(50%, #102654), color-stop(50%, #ffffff));
     background: -o-linear-gradient(left, #102654 50%, #ffffff 50%);
@@ -3164,8 +3215,8 @@ button,
     display: grid;
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
-    padding-top: 50px;
-    padding-bottom: 76px;
+    padding-top: 55px;
+    padding-bottom: 62px;
     border-top: 1px solid #74819c;
   }
 
@@ -3176,10 +3227,8 @@ button,
 
   .gym__video {
     min-width: 364px;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
+    left: -63px;
+    top: 289px;
   }
 
   .gym__video img {
@@ -3192,7 +3241,7 @@ button,
 
   .gym__description {
     max-width: 360px;
-    margin-left: 60px;
+    margin-left: 63px;
     margin-right: 35px;
   }
 
@@ -3211,7 +3260,7 @@ button,
 
   .promo__description {
     width: 500px;
-    padding: 85px 79px 87px 78px;
+    padding: 81px 79px 81px 78px;
   }
 
   .trainers__container {
@@ -3253,10 +3302,9 @@ button,
   }
 
   .stock__picture img {
-    -o-object-fit: cover;
-    object-fit: cover;
     width: 280px;
     height: 462px;
+    background-position: center;
   }
 
   .stock__options-wrapper {
@@ -3279,7 +3327,26 @@ button,
 
 @media (min-width: 1350px) {
   .gym__description {
-    margin-right: 85px;
+    margin-right: 80px;
+  }
+}
+
+@media (min-width: 1500px) {
+  .header__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .header__container .header__phone {
+    margin-left: 46px;
+  }
+
+  .header__container .header__list {
+    left: -20px;
   }
 }
 
@@ -3296,7 +3363,7 @@ button,
   }
 
   .header {
-    background: conic-gradient(from 139.4deg at 20.7% 35.74%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
+    background: conic-gradient(from 139.4deg at 20.7% 35.74%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
     padding-top: 40px;
     padding-bottom: 82px;
   }
@@ -3375,11 +3442,6 @@ button,
     grid-template-columns: 442px;
   }
 
-  .subscription__buy-button {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
   .subscription__tabs-wrapper {
     width: 332px;
     margin-bottom: 45px;
@@ -3410,10 +3472,6 @@ button,
     font-size: 42px;
     line-height: 50px;
     margin-bottom: 60px;
-  }
-
-  .advantages__container {
-    padding: 0 45px;
   }
 
   .advantages__enumeration {
@@ -3672,7 +3730,7 @@ button,
   }
 
   .header {
-    background: conic-gradient(from 171.43deg at 35.31% 34.22%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
+    background: conic-gradient(from 171.43deg at 35.31% 34.22%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
   }
 
   .header__logo svg {
@@ -3810,12 +3868,6 @@ button,
   .advantages h2 {
     font-size: 32px;
     line-height: 38px;
-  }
-
-  .advantages__container {
-    padding: 0;
-    margin: 0;
-    width: 100%;
   }
 
   .advantages__enumeration {
@@ -4070,7 +4122,7 @@ button,
     max-height: 68px;
   }
 
-  .review__description span {
+  .reviews__description span {
     line-height: 26px;
     position: absolute;
     top: 55px;
@@ -4078,7 +4130,7 @@ button,
     min-width: 62px;
   }
 
-  .review__description p {
+  .reviews__description p {
     text-align: center;
   }
 

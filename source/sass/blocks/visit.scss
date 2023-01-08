@@ -23,7 +23,7 @@
     line-height: 84px;
     font-weight: 800;
     margin: 0;
-    margin-bottom: 24px;
+    margin-bottom: 18px;
     letter-spacing: 0.03em;
 
     @media (max-width: $tablet-width) {
@@ -43,7 +43,7 @@
   button {
     width: 100%;
     cursor: pointer;
-    padding: 21px;
+    padding: 17px;
     outline: none;
     border: 3px solid $base-white;
     background-color: transparent;
@@ -78,7 +78,7 @@
 .visit__input-wrapper {
   display: flex;
   gap: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 
   @media (max-width: $tablet-width) {
     gap: 60px;
@@ -93,7 +93,7 @@
     background-color: transparent;
     outline: none;
     border: none;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
     border-bottom: 1px solid $light-slate-grey;
     color: $base-white;
     font-family: $roboto-condensed;

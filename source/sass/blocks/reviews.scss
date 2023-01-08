@@ -1,5 +1,4 @@
 .reviews {
-  padding-top: 117px;
   padding-bottom: 120px;
   text-align: center;
 
@@ -20,6 +19,7 @@
     letter-spacing: 0.03em;
     margin: 0;
     margin-bottom: 37px;
+    margin-left: 5px;
 
     @media (max-width: $tablet-width) {
       font-size: 42px;
@@ -36,7 +36,7 @@
 
 .reviews__comment {
   background-color: $resolution-blue;
-  padding: 62px;
+  padding: 55px 62px 57px;
   display: flex;
   gap: 28px;
 
@@ -69,6 +69,8 @@
 }
 
 .reviews__picture {
+  margin-top: 7px;
+
   @media (max-width: $mobile-width) {
     min-width: 68px;
     max-width: 68px;
@@ -98,7 +100,7 @@
     font-size: 20px;
     line-height: 30px;
     font-weight: 700;
-    margin-bottom: 25px;
+    margin-bottom: 13px;
     text-align: left;
 
     @media (max-width: $mobile-width) {
@@ -162,11 +164,11 @@
 }
 
 .reviews__button--prev {
-  left: 0;
+  left: -25px;
 }
 
 .reviews__button--next {
-  right: 0;
+  right: -25px;
 
   &::before {
     transform: rotate(180deg) translateX(100%);

@@ -7,7 +7,7 @@
   }
 
   @media (max-width: $mobile-width) {
-    padding: 70px 0;
+    padding: 63px 0 72px;
   }
 
   h2 {
@@ -24,13 +24,14 @@
     @media (max-width: $tablet-width) {
       font-size: 42px;
       line-height: 50px;
-      margin-bottom: 38px;
+      margin-bottom: 40px;
       margin-left: 0;
     }
 
     @media (max-width: $mobile-width) {
       font-size: 32px;
       line-height: 38px;
+      margin-bottom: 42px;
     }
   }
 }
@@ -42,8 +43,9 @@
   gap: 28px;
 
   @media (max-width: $mobile-width) {
-    padding: 40px 25px;
+    padding: 32px 25px 33px;
     flex-direction: column;
+    min-width: 226px;
   }
 }
 
@@ -64,8 +66,10 @@
   }
 
   @media (max-width: $mobile-width) {
-    width: 100%;
-    padding: 47px;
+    max-width: 226px;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -77,6 +81,7 @@
     max-width: 68px;
     min-height: 68px;
     max-height: 68px;
+    margin-left: 15px;
   }
 
   img {
@@ -104,11 +109,16 @@
     margin-bottom: 13px;
     text-align: left;
 
+    @media (max-width: $tablet-width) {
+      margin-left: 5px;
+      margin-bottom: 11px;
+    }
+
     @media (max-width: $mobile-width) {
       line-height: 26px;
       position: absolute;
-      top: 55px;
-      left: 60%;
+      top: 50px;
+      left: 52%;
       min-width: 62px;
     }
   }
@@ -122,6 +132,7 @@
 
     @media (max-width: $mobile-width) {
       text-align: center;
+      margin-top: -10px;
     }
   }
 }
@@ -134,7 +145,7 @@
   background-color: transparent;
   top: 50%;
   transform: translateY(-50%);
-  width: 50px;
+  width: 30px;
   height: 50px;
 
 
@@ -152,7 +163,13 @@
     width: 16px;
     height: 32px;
     background-image: url("../img/arrow.svg");
+    background-repeat: no-repeat;
     top: 8px;
+
+    @media (max-width: $mobile-width) {
+      width: 10px;
+      height: 32px;
+    }
   }
 }
 
@@ -165,11 +182,33 @@
 }
 
 .reviews__button--prev {
-  left: -25px;
+  @media (min-width: $desktop-width) {
+    left: -25px;
+  }
+
+  @media (max-width: $tablet-width) {
+    left: -17px;
+  }
+
+  @media (max-width: $mobile-width) {
+    left: -47px;
+    top: 168px;
+  }
 }
 
 .reviews__button--next {
-  right: -25px;
+  @media (min-width: $desktop-width) {
+    right: -25px;
+  }
+
+  @media (max-width: $tablet-width) {
+    right: -17px;
+  }
+
+  @media (max-width: $mobile-width) {
+    right: -47px;
+    top: 168px;
+  }
 
   &::before {
     transform: rotate(180deg) translateX(100%);

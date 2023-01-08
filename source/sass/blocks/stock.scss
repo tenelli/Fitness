@@ -7,7 +7,8 @@
   }
 
   @media (max-width: $mobile-width) {
-    padding: 70px 0;
+    padding: 62px 0;
+    padding-bottom: 0;
   }
 
   h2 {
@@ -31,6 +32,8 @@
     @media (max-width: $mobile-width) {
       font-size: 32px;
       line-height: 38px;
+      margin-left: -5px;
+      margin-bottom: 43px;
     }
   }
 }
@@ -69,6 +72,7 @@
 
   @media (max-width: $mobile-width) {
     width: 100%;
+    padding-bottom: 93px;
   }
 
   p {
@@ -77,6 +81,10 @@
     font-size: 28px;
     line-height: 44px;
     font-weight: 700;
+
+    @media (max-width: $mobile-width) {
+      text-align: center;
+    }
   }
 
   span {
@@ -86,6 +94,11 @@
     font-weight: 700;
     margin-top: -10px;
     margin-bottom: 15px;
+
+    @media (max-width: $mobile-width) {
+      text-align: center;
+      margin-bottom: 7px;
+    }
   }
 
   h3 {
@@ -93,6 +106,10 @@
     font-size: 18px;
     line-height: 25px;
     font-weight: 400;
+
+    @media (max-width: $mobile-width) {
+      text-align: center;
+    }
   }
 }
 
@@ -110,6 +127,7 @@
       background-position: center;
     }
   }
+
   background-color: $malibu;
 
   @media (min-width: 768px) {
@@ -128,6 +146,10 @@
     img {
       object-fit: cover;
       width: 100%;
+
+      @media (max-width: 320px) {
+        height: 299px;
+      }
     }
   }
 }
@@ -163,6 +185,7 @@
 
   @media (max-width: $mobile-width) {
     width: 100%;
+    padding: 30px;
   }
 
   p {
@@ -173,6 +196,10 @@
     line-height: 35px;
     font-weight: 700;
     margin-bottom: 8px;
+
+    @media (max-width: $mobile-width) {
+      text-align: center;
+    }
   }
 
   h3 {
@@ -182,6 +209,10 @@
     line-height: 22px;
     font-weight: 400;
     margin-bottom: 40px;
+
+    @media (max-width: $mobile-width) {
+      text-align: center;
+    }
   }
 }
 
@@ -203,6 +234,12 @@
   border: none;
   position: absolute;
   bottom: 40px;
+
+  @media (max-width: $mobile-width) {
+    bottom: 42px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 
   &:hover a,
   &:focus-within a {
@@ -232,6 +269,10 @@
   &--promo {
     position: absolute;
     bottom: 25px;
+
+    @media (max-width: $mobile-width) {
+      bottom: 38px;
+    }
 
     &:hover a,
     &:focus-within a {

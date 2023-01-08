@@ -7,6 +7,11 @@
     padding: 100px 0;
   }
 
+  @media (max-width: $mobile-width) {
+    padding-top: 64px;
+    padding-bottom: 67px;
+  }
+
   h2 {
     text-align: center;
     font-family: $alumni-sans;
@@ -28,7 +33,7 @@
     @media (max-width: $mobile-width) {
       font-size: 32px;
       line-height: 38px;
-      margin-bottom: 20px;
+      margin-bottom: 25px;
     }
   }
 }
@@ -41,7 +46,6 @@
 .subscription__option {
   display: grid;
   justify-content: center;
-
   gap: 40px;
 
   @media (min-width: 1200px) {
@@ -75,8 +79,10 @@
 
   @media (max-width: $mobile-width) {
     min-width: 290px;
-    padding-top: 48px;
-    padding-bottom: 48px;
+    padding: 10px;
+    padding-top: 40px;
+    padding-bottom: 0px;
+    min-height: 384px;
   }
 
   h3 {
@@ -92,7 +98,7 @@
     @media (max-width: $mobile-width) {
       font-size: 22px;
       line-height: 24px;
-      margin-bottom: 20px;
+      margin-bottom: 12px;
     }
   }
 
@@ -105,6 +111,10 @@
     margin: 0;
     margin-bottom: 67px;
     text-align: center;
+
+    @media (max-width: $mobile-width) {
+      margin-bottom: 50px;
+    }
   }
 }
 
@@ -116,7 +126,7 @@
   margin-bottom: 33px;
 
   @media (max-width: $mobile-width) {
-    margin-bottom: 50px;
+    margin-bottom: 33px;
   }
 
   span:first-of-type {

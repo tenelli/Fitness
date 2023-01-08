@@ -9,7 +9,7 @@
   }
 
   @media (max-width: $mobile-width) {
-    padding: 50px 0;
+    padding: 40px 0;
   }
 }
 
@@ -22,7 +22,7 @@
   }
 
   @media (max-width: $mobile-width) {
-    gap: 71px;
+    gap: 76px;
   }
 
   ul {
@@ -40,7 +40,7 @@
 
     @media (max-width: $mobile-width) {
       flex-direction: column;
-      gap: 28px;
+      gap: 15px;
     }
   }
 
@@ -135,7 +135,7 @@
 
   @media (max-width: $mobile-width) {
     flex-direction: column;
-    gap: 40px;
+    gap: 32px;
   }
 }
 

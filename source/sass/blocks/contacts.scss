@@ -6,7 +6,7 @@
   }
 
   @media (max-width: $mobile-width) {
-    padding: 70px 15px;
+    padding: 65px 15px 63px;
   }
 
   h2 {
@@ -48,7 +48,7 @@
 
   @media (max-width: $mobile-width) {
     flex-direction: column;
-    gap: 35px;
+    gap: 18px;
   }
 
   li {

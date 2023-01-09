@@ -1686,32 +1686,6 @@ button,
   max-width: 300px;
 }
 
-.footer__navigation li a {
-  color: #ffffff;
-  font-size: 14px;
-  line-height: 16px;
-  font-weight: 400;
-}
-
-.footer__navigation li a:hover,
-.footer__navigation li a:focus {
-  color: #60f588;
-  outline: none;
-}
-
-.footer__navigation li a:hover svg,
-.footer__navigation li a:focus svg {
-  fill: #60f588;
-}
-
-.footer__navigation li a:active {
-  color: #ffee97;
-}
-
-.footer__navigation li a:active svg {
-  fill: #ffee97;
-}
-
 .footer__social ul {
   list-style: none;
   margin: 0;
@@ -1724,29 +1698,6 @@ button,
   gap: 11px;
   max-width: 300px;
   margin-left: 30px;
-}
-
-.footer__social li a svg {
-  fill: #ffffff;
-}
-
-.footer__social li a:hover,
-.footer__social li a:focus {
-  color: #60f588;
-  outline: none;
-}
-
-.footer__social li a:hover svg,
-.footer__social li a:focus svg {
-  fill: #60f588;
-}
-
-.footer__social li a:active {
-  color: #ffee97;
-}
-
-.footer__social li a:active svg {
-  fill: #ffee97;
 }
 
 .footer__container {
@@ -1773,6 +1724,43 @@ button,
   width: 88px;
   height: 32px;
   fill: #ffffff;
+}
+
+.footer__link {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.footer__link svg,
+.footer__social-link svg {
+  fill: #ffffff;
+}
+
+.footer__link:hover,
+.footer__link:focus,
+.footer__social-link:hover,
+.footer__social-link:focus {
+  color: #60f588;
+  outline: none;
+}
+
+.footer__link:hover svg,
+.footer__link:focus svg,
+.footer__social-link:hover svg,
+.footer__social-link:focus svg {
+  fill: #60f588;
+}
+
+.footer__link:active,
+.footer__social-link:active {
+  color: #ffee97;
+}
+
+.footer__link:active svg,
+.footer__social-link:active svg {
+  fill: #ffee97;
 }
 
 .subscription {
@@ -4019,11 +4007,6 @@ button,
     gap: 15px;
   }
 
-  .footer__navigation li a {
-    font-size: 16px;
-    line-height: 19px;
-  }
-
   .footer__social ul {
     margin-left: 0;
   }
@@ -4044,6 +4027,11 @@ button,
   .footer__logo svg {
     width: 68px;
     height: 15px;
+  }
+
+  .footer__link {
+    font-size: 16px;
+    line-height: 19px;
   }
 
   .subscription {

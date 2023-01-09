@@ -51,38 +51,6 @@
   ul:last-of-type {
     max-width: 300px;
   }
-
-  li {
-    a {
-      color: $base-white;
-      font-size: 14px;
-      line-height: 16px;
-      font-weight: 400;
-
-      &:hover,
-      &:focus {
-        color: $screamin-green;
-        outline: none;
-
-        svg {
-          fill: $screamin-green;
-        }
-      }
-
-      &:active {
-        color: $drover;
-
-        svg {
-          fill: $drover;
-        }
-      }
-
-      @media (max-width: $mobile-width) {
-        font-size: 16px;
-        line-height: 19px;
-      }
-    }
-  }
 }
 
 
@@ -99,32 +67,6 @@
 
     @media (max-width: $mobile-width) {
       margin-left: 0;
-    }
-  }
-
-  li {
-    a {
-      svg {
-        fill: $base-white;
-      }
-
-      &:hover,
-      &:focus {
-        color: $screamin-green;
-        outline: none;
-
-        svg {
-          fill: $screamin-green;
-        }
-      }
-
-      &:active {
-        color: $drover;
-
-        svg {
-          fill: $drover;
-        }
-      }
     }
   }
 }
@@ -172,6 +114,45 @@
     @media (max-width: $mobile-width) {
       width: 68px;
       height: 15px;
+    }
+  }
+}
+
+
+
+.footer__link {
+  color: $base-white;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+
+  @media (max-width: $mobile-width) {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+
+.footer__link,
+.footer__social-link {
+  svg {
+    fill: $base-white;
+  }
+
+  &:hover,
+  &:focus {
+    color: $screamin-green;
+    outline: none;
+
+    svg {
+      fill: $screamin-green;
+    }
+  }
+
+  &:active {
+    color: $drover;
+
+    svg {
+      fill: $drover;
     }
   }
 }

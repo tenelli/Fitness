@@ -2835,17 +2835,8 @@ button,
 
 .contacts {
   padding-left: 120px;
-}
-
-.contacts h2 {
-  font-family: "Alumni Sans", "Arial", sans-serif;
-  color: #102654;
-  font-size: 54px;
-  line-height: 65px;
-  font-weight: 600;
-  letter-spacing: 0.03em;
-  margin: 0;
-  margin-bottom: 38px;
+  padding-right: 120px;
+  padding-top: 103px;
 }
 
 .contacts__list {
@@ -2857,6 +2848,7 @@ button,
   display: -ms-flexbox;
   display: flex;
   gap: 120px;
+  position: relative;
 }
 
 .contacts__list li {
@@ -2871,6 +2863,7 @@ button,
   -moz-column-gap: 30px;
   column-gap: 30px;
   row-gap: 20px;
+  max-width: 250px;
 }
 
 .contacts__list li:first-child {
@@ -2885,6 +2878,19 @@ button,
   background-color: #74819c;
   top: 0;
   right: -60px;
+}
+
+.contacts__list h2 {
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  color: #102654;
+  font-size: 54px;
+  line-height: 65px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  margin: 0;
+  position: absolute;
+  top: -100px;
+  left: -2px;
 }
 
 .contacts__item h3 {
@@ -3850,13 +3856,13 @@ button,
   }
 
   .contacts {
-    padding: 60px 179px 62px 133px;
-  }
-
-  .contacts h2 {
-    font-size: 42px;
-    line-height: 50px;
-    margin-bottom: 35px;
+    padding: 145px 179px 62px 133px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 
   .contacts__list {
@@ -3874,6 +3880,12 @@ button,
     right: -50px;
     top: 6px;
     height: 129px;
+  }
+
+  .contacts__list h2 {
+    font-size: 42px;
+    line-height: 50px;
+    top: -82px;
   }
 
   .contacts__item h3 {
@@ -4508,11 +4520,7 @@ button,
 
   .contacts {
     padding: 65px 15px 63px;
-  }
-
-  .contacts h2 {
-    font-size: 32px;
-    line-height: 38px;
+    display: block;
   }
 
   .contacts__list {
@@ -4525,6 +4533,13 @@ button,
 
   .contacts__list li:first-child::after {
     display: none;
+  }
+
+  .contacts__list h2 {
+    font-size: 32px;
+    line-height: 38px;
+    position: static;
+    margin-bottom: 14px;
   }
 
   .visit {

@@ -1,17 +1,25 @@
 .visit {
+  @media (max-width: 1300px) {
+    padding-left: 20px;
+  }
+
   @media (min-width: $desktop-width) {
+    width: 410px;
     margin-left: auto;
     margin-right: 170px;
-    width: 410px;
   }
+
 
   @media (max-width: $tablet-width) {
     background-color: $sapphire;
     width: 100%;
     padding: 64px 163px 70px 133px;
+    display: flex;
+    justify-content: center;
   }
 
   @media (max-width: $mobile-width) {
+    display: block;
     padding: 65px 15px;
   }
 
@@ -42,7 +50,7 @@
   }
 
   button {
-    width: 100%;
+    width: 410px;
     cursor: pointer;
     padding: 17px;
     outline: none;

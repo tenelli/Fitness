@@ -2835,7 +2835,7 @@ button,
 
 .contacts {
   padding-left: 120px;
-  padding-right: 120px;
+  padding-right: 30px;
   padding-top: 103px;
 }
 
@@ -2863,7 +2863,6 @@ button,
   -moz-column-gap: 30px;
   column-gap: 30px;
   row-gap: 20px;
-  max-width: 250px;
 }
 
 .contacts__list li:first-child {
@@ -2932,7 +2931,7 @@ button,
 }
 
 .visit button {
-  width: 100%;
+  width: 410px;
   cursor: pointer;
   padding: 17px;
   outline: none;
@@ -3409,9 +3408,9 @@ button,
   }
 
   .visit {
+    width: 410px;
     margin-left: auto;
     margin-right: 170px;
-    width: 410px;
   }
 }
 
@@ -3460,6 +3459,10 @@ button,
     grid-template-columns: 268px 268px;
     -ms-grid-rows: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+
+  .visit {
+    padding-left: 20px;
   }
 }
 
@@ -3904,6 +3907,12 @@ button,
     background-color: #102654;
     width: 100%;
     padding: 64px 163px 70px 133px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 
   .visit h2 {
@@ -4543,6 +4552,7 @@ button,
   }
 
   .visit {
+    display: block;
     padding: 65px 15px;
   }
 

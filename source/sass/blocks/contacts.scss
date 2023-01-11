@@ -1,6 +1,6 @@
 .contacts {
   padding-left: 120px;
-  padding-right: 120px;
+  padding-right: 30px;
   padding-top: 103px;
 
   @media (max-width: $tablet-width) {
@@ -40,7 +40,6 @@
     flex-direction: column;
     column-gap: 30px;
     row-gap: 20px;
-    max-width: 250px;
 
     @media (max-width: $tablet-width) {
       column-gap: 35px;

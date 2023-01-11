@@ -157,3 +157,20 @@ if (reviewsButton) {
     button.classList.remove('reviews__button--no-js');
   });
 }
+
+
+let gymButton = document.querySelector('.gym__button');
+let iframe = document.querySelector('iframe');
+
+if (gymButton && iframe) {
+  gymButton.addEventListener('click', () => {
+    iframe.classList.add('active');
+    iframe.src += '?autoplay=1';
+
+    window.addEventListener('load', () => {
+      iframe.src -= '&autoplay=1';
+    });
+  });
+}
+
+

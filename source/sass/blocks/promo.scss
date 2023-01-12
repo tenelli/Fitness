@@ -25,6 +25,7 @@
   }
 
   @media (max-width: $mobile-width) {
+    display: grid;
     grid-template-columns: 1fr;
   }
 }
@@ -112,8 +113,8 @@
 
     @media (min-width: 768px) {
       max-width: 205px;
-    margin-left: auto;
-    margin-right: auto;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     @media (max-width: $tablet-width) {

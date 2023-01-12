@@ -4306,6 +4306,8 @@ button,
   }
 
   .promo__wrapper {
+    display: -ms-grid;
+    display: grid;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }

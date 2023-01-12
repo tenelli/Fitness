@@ -464,37 +464,43 @@
           <div class="container">
             <h2>Акции</h2>
             <div class="stock__wrapper">
-              <div class="stock__illustration">
-                <div class="stock__description">
-                  <p>Год</p>
-                  <span>4999</span>
-                  <h3>Безлимитный абонемент в&nbsp;тренажерный зал</h3>
-                  <div class="stock__button">
-                    <a class="unselectable" href="#">Подробнее</a>
+              <div class="stock__item stock__item--decor">
+                <article class="stock__card">
+                  <div class="stock__content-wrapper">
+                    <div class="stock__content">
+                      <p>Год</p>
+                      <span>4999</span>
+                      <h3>Безлимитный абонемент<br> в&nbsp;тренажерный зал</h3>
+                    </div>
+                    <a class="stock__button unselectable" href="#">подробнее</a>
                   </div>
-                </div>
-                <div class="stock__picture">
                   <picture>
                     <source type="image/webp" srcset="./img/promo.webp 1x, ./img/promo@2x.webp 2x">
-                    <img src="./img/promo.jpg" srcset="./img/promo@2x.jpg 2x" width="399" height="462" alt="Фотография девушки в синем спортивном костюме на фоне ясного неба." loading="lazy">
+                    <img class="stock__card__image" src="./img/promo.jpg" srcset="./img/promo@2x.jpg 2x" width="280" height="462" alt="Фотография девушки в синем спортивном костюме на фоне ясного неба." loading="lazy">
                   </picture>
-                </div>
+                </article>
               </div>
-              <div class="stock__options-wrapper">
-                <div class="stock__option">
-                  <p>Месяц бесплатно</p>
-                  <h3>Приведи друга, получи абонемент в&nbsp;подарок</h3>
-                  <div class="stock__button stock__button--promo">
-                    <a class="unselectable" href="#">Подробнее</a>
+              <div class="stock__item">
+                <article class="stock__card">
+                  <div class="stock__content-wrapper">
+                    <div class="stock__content">
+                      <p>Месяц бесплатно</p>
+                      <h3>Приведи друга, получи<br> абонемент в&nbsp;подарок</h3>
+                    </div>
+                    <a class="stock__button unselectable" href="#">подробнее</a>
                   </div>
-                </div>
-                <div class="stock__option">
-                  <p>Скидка 20%</p>
-                  <h3>Корпоративный фитнес с&nbsp;командой</h3>
-                  <div class="stock__button stock__button--promo">
-                    <a class="unselectable" href="#">Подробнее</a>
+                </article>
+              </div>
+              <div class="stock__item">
+                <article class="stock__card">
+                  <div class="stock__content-wrapper">
+                    <div class="stock__content">
+                      <p>Скидка 20%</p>
+                      <h3>Корпоративный фитнес<br> с&nbsp;командой</h3>
+                    </div>
+                    <a class="stock__button unselectable" href="#">подробнее</a>
                   </div>
-                </div>
+                </article>
               </div>
             </div>
           </div>
@@ -513,10 +519,8 @@
                         <img src="./img/review.png" srcset="./img/review@2x.png 2x" width="80" height="80" alt="Фотография-кружок автора первого отзыва." loading="lazy">
                       </picture>
                     </div>
-                    <div class="reviews__description">
-                      <span>Анна Орлова</span>
-                      <p>&laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</p>
-                    </div>
+                      <span class="reviews__author">Анна<br> Орлова</span>
+                      <p class="reviews__description">&laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</p>
                   </div>
                   <div class="swiper-slide reviews__comment">
                     <div class="reviews__picture">
@@ -525,10 +529,8 @@
                         <img src="./img/review.png" srcset="./img/review@2x.png 2x" width="80" height="80" alt="Фотография-кружок автора второго отзыва." loading="lazy">
                       </picture>
                     </div>
-                    <div class="reviews__description">
-                      <span>Не Анна Орлова</span>
-                      <p>&laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</p>
-                    </div>
+                      <span class="reviews__author">Не Анна<br> Орлова</span>
+                      <p class="reviews__description">&laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</p>
                   </div>
                 </div>
               </div>
@@ -579,65 +581,59 @@
         </section>
       </main>
       <footer class="footer">
-        <div class="container footer__container">
-          <div class="footer__navigation">
-            <ul>
-              <li class="footer__logo">
-                <a class="unselectable footer__link" href="#">
-                  <svg width="88" height="32" role="img" aria-label="Логотип сайта в виде надписи Supergym.">
-                    <use xlink:href="img/sprite/sprite.svg#logo"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a class="unselectable footer__link" href="#">Услуги</a>
-              </li>
-              <li>
-                <a class="unselectable footer__link" href="#subscription">Абонементы</a>
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <a class="unselectable footer__link" href="#stock">Акции</a>
-              </li>
-              <li>
-                <a class="unselectable footer__link" href="#trainers">Тренеры</a>
-              </li>
-              <li>
-                <a class="unselectable footer__link" href="#">Расписание</a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer__social">
-            <ul>
-              <li>
-                <a class="unselectable footer__social-link" href="#">
-                  <span class="visually-hidden">Мы в Вконтакте</span>
-                  <svg width="25" height="25" role="img" aria-label="Логотип социальной сети вконтакте.">
-                    <use xlink:href="img/sprite/sprite.svg#vk"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a class="unselectable footer__social-link" href="#">
-                  <span class="visually-hidden">Мы в Одноклассниках</span>
-                  <svg width="25" height="25" role="img" aria-label="Логотип социальной сети одноклассники.">
-                    <use xlink:href="img/sprite/sprite.svg#ok"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a class="unselectable footer__social-link" href="#">
-                  <span class="visually-hidden">Мы в Реддит</span>
+      <div class="container">
+        <nav class="footer__navigation">
+          <a class="footer__logo unselectable" href="#">
+            <svg width="88" height="32" role="img" aria-label="Логотип сайта в виде надписи Supergym.">
+              <use xlink:href="img/sprite/sprite.svg#logo"></use>
+            </svg>
+          </a>
+          <ul class="footer__list">
+            <li class="footer__item footer__item--services">
+              <a class="footer__link unselectable" href="#">Услуги</a>
+            </li>
+            <li class="footer__item footer__item--subscription">
+              <a class="footer__link unselectable" href="#subscription">Абонементы</a>
+            </li>
+            <li class="footer__item footer__item--stock">
+              <a class="footer__link unselectable" href="#stock">Акции</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link unselectable" href="#trainers">Тренеры</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link unselectable" href="#">Расписание</a>
+            </li>
+          </ul>
+          <ul class="footer__social">
+            <li class="footer__social-item">
+              <a class="footer__social-link unselectable" href="#">
+                <span class="visually-hidden">Мы в Вконтакте</span>
+                <svg width="25" height="25" role="img" aria-label="Логотип социальной сети вконтакте.">
+                  <use xlink:href="img/sprite/sprite.svg#vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a class="footer__social-link unselectable" href="#">
+                <span class="visually-hidden">Мы в Одноклассниках</span>
+                <svg width="25" height="25" role="img" aria-label="Логотип социальной сети одноклассники.">
+                  <use xlink:href="img/sprite/sprite.svg#ok"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a class="footer__social-link unselectable" href="#">
+                <span class="visually-hidden">Мы в Реддит</span>
                   <svg width="25" height="25" role="img" aria-label="Логотип социальной сети реддит.">
                     <use xlink:href="img/sprite/sprite.svg#reddit"></use>
                   </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </footer>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
     </div>
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>

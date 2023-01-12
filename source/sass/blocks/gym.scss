@@ -23,10 +23,12 @@
     }
   }
 
-  @media (min-width: 768px) {
+  @media (max-width: $tablet-width) {
+    width: 100%;
+      height: 100%;
     img {
-      width: 678px;
-      height: 345px;
+      width: 100%;
+      height: 100%;
     }
   }
 
@@ -42,6 +44,8 @@
 }
 
 .gym__video {
+  position: relative;
+
   &::before {
     content: "";
     position: absolute;
@@ -57,7 +61,7 @@
   @media (min-width: 1200px) {
     min-width: 364px;
     top: 289px;
-    left: -63px;
+    left: 117px;
 
     img {
       min-width: 364px;
@@ -72,8 +76,9 @@
     position: absolute;
     max-width: 266px;
     height: 167px;
-    left: 206px;
-    top: 258px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -17px;
 
     img {
       width: 266px;
@@ -81,15 +86,17 @@
   }
 
   @media (max-width: $mobile-width) {
-    width: 320px;
+    width: 100%;
+    height: 100%;
     position: relative;
     margin-bottom: 70px;
     margin-left: auto;
     margin-right: auto;
 
     img {
-      width: 320px;
-      height: 167px;
+      width: 100%;
+      height: 100%;
+      aspect-ratio: 320/167;
     }
   }
 }
@@ -105,8 +112,8 @@
   }
 
   @media (max-width: $mobile-width) {
-    width: 320px;
-    height: 167px;
+    width: 100%;
+    height: 100%;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -118,14 +125,16 @@
 
 
 .gym__demonstration {
+  position: relative;
   @media (min-width: $desktop-width) {
     margin: 0;
   }
 
-  @media (min-width: 768px) {
-    position: relative;
+  @media (max-width: $tablet-width) {
     margin-left: auto;
     margin-right: auto;
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -245,7 +254,7 @@
   }
 }
 
-.gym__button{
+.gym__button {
   position: absolute;
   cursor: pointer;
   border: 1px solid transparent;
@@ -265,11 +274,12 @@
     background-image: url("../img/svg/play_tablet.svg");
     width: 73px;
     height: 73px;
-    top: 30%;
+    top: 27%;
   }
 
   @media (max-width: $mobile-width) {
     top: 28%;
+    transform: translate(-50%);
   }
 
   &:hover {

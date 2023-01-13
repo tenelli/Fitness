@@ -8,7 +8,7 @@
   }
 
   @media (max-width: $mobile-width) {
-    padding: 63px 0 64px;
+    padding: 63px 0 70px;
   }
 
   h2 {
@@ -42,20 +42,21 @@
   display: grid;
   grid-template-columns: 80px 1fr;
   gap: 28px;
-  row-gap: 18px;
+  row-gap: 15px;
   margin: 0 auto;
   padding: 55px 62px 57px;
 
   @media (max-width: $tablet-width) {
     padding-left: 65px;
     padding-right: 65px;
+    row-gap: 12px;
   }
 
   @media (max-width: $mobile-width) {
     grid-template-columns: 68px 1fr;
     column-gap: 30px;
-    padding: 33px 25px 34px;
-    row-gap: 11px;
+    padding: 33px 25px 35px;
+    row-gap: 16px;
   }
 }
 
@@ -122,7 +123,7 @@
   font-size: 20px;
   line-height: 30px;
   font-weight: 700;
-  margin-bottom: 13px;
+  margin-bottom: 0;
   text-align: left;
   color: $base-white;
 
@@ -139,8 +140,6 @@
     }
   }
 }
-
-
 
 .reviews__button {
   cursor: pointer;

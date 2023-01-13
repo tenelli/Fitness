@@ -53,9 +53,9 @@
       position: absolute;
       content: "";
       width: 1px;
-      height: 102px;
+      height: calc(100% - 13px);
       background-color: $light-slate-grey;
-      top: 0;
+      top: 5px;
       right: -60px;
 
       @media (max-width: $tablet-width) {

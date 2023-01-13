@@ -55,7 +55,10 @@
 }
 
 .header__phone-wrapper {
-  display: none;
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    right: 0;
+  }
 
   @media (max-width: $tablet-width) {
     display: flex;
@@ -329,14 +332,5 @@
     width: 100%;
     padding-top: 22px;
     padding-bottom: 20px;
-  }
-}
-
-.header__desktop-phone {
-  position: absolute;
-  right: 0;
-
-  @media (max-width: $tablet-width) {
-    display: none;
   }
 }

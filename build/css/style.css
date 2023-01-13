@@ -1527,10 +1527,6 @@ button,
   fill: #ffffff;
 }
 
-.header__phone-wrapper {
-  display: none;
-}
-
 .header__phone {
   display: block;
   color: #ffffff;
@@ -1670,11 +1666,6 @@ button,
 
 .header__button {
   display: none;
-}
-
-.header__desktop-phone {
-  position: absolute;
-  right: 0;
 }
 
 .footer {
@@ -2791,7 +2782,7 @@ button,
   -ms-grid-columns: 80px 1fr;
   grid-template-columns: 80px 1fr;
   gap: 28px;
-  row-gap: 18px;
+  row-gap: 15px;
   margin: 0 auto;
   padding: 55px 62px 57px;
 }
@@ -2832,7 +2823,7 @@ button,
   font-size: 20px;
   line-height: 30px;
   font-weight: 700;
-  margin-bottom: 13px;
+  margin-bottom: 0;
   text-align: left;
   color: #ffffff;
 }
@@ -2940,9 +2931,9 @@ button,
   position: absolute;
   content: "";
   width: 1px;
-  height: 102px;
+  height: calc(100% - 13px);
   background-color: #74819c;
-  top: 0;
+  top: 5px;
   right: -60px;
 }
 
@@ -3160,8 +3151,8 @@ button,
 
   .gym__video {
     position: absolute;
-    max-width: 266px;
-    height: 167px;
+    min-width: 266px;
+    min-height: 167px;
     left: 50%;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
@@ -3170,7 +3161,9 @@ button,
   }
 
   .gym__video img {
-    width: 266px;
+    min-width: 266px;
+    min-height: 167px;
+    aspect-ratio: 266/167;
   }
 
   .gym__container {
@@ -3186,16 +3179,34 @@ button,
     margin: 0 auto;
   }
 
+  .promo__description .promo__context {
+    margin-left: -3px;
+  }
+
   .promo__description a {
     max-width: 205px;
     margin-left: auto;
     margin-right: auto;
   }
 
+  .promo__info {
+    margin-left: 0;
+  }
+
   .reviews__wrapper {
     min-width: 678px;
     width: 100%;
     padding: 0 56px;
+  }
+}
+
+@media (min-width: 769px) {
+  .promo__description .promo__context {
+    margin-left: auto;
+  }
+
+  .promo__info {
+    margin-left: auto;
   }
 }
 
@@ -3218,6 +3229,11 @@ button,
   .header__logo svg {
     width: 122px;
     height: 44px;
+  }
+
+  .header__phone-wrapper {
+    position: absolute;
+    right: 0;
   }
 
   .header__top {
@@ -3347,6 +3363,10 @@ button,
 
   .promo__description a {
     max-width: 343px;
+  }
+
+  .promo__info {
+    margin-left: 0;
   }
 
   .trainers__container {
@@ -3527,10 +3547,6 @@ button,
     position: relative;
   }
 
-  .header__desktop-phone {
-    display: none;
-  }
-
   .footer {
     padding-top: 48px;
     padding-bottom: 34px;
@@ -3558,7 +3574,7 @@ button,
   }
 
   .subscription {
-    padding: 100px 0;
+    padding: 32px 0 100px;
   }
 
   .subscription h2 {
@@ -3660,8 +3676,14 @@ button,
   }
 
   .gym__video iframe {
-    width: 266px;
-    height: 167px;
+    min-width: 266px;
+    min-height: 167px;
+  }
+
+  .gym__video iframe img {
+    min-width: 266px;
+    min-height: 167px;
+    aspect-ratio: 266/167;
   }
 
   .gym__demonstration {
@@ -3732,7 +3754,6 @@ button,
     margin-bottom: 30px;
     padding-left: 10px;
     width: 202px;
-    margin-left: auto;
     margin-right: auto;
   }
 
@@ -3753,7 +3774,6 @@ button,
   .promo__info {
     gap: 34px;
     width: 202px;
-    margin-left: auto;
     margin-right: auto;
     margin-bottom: 0;
   }
@@ -3892,6 +3912,7 @@ button,
   .reviews__comment {
     padding-left: 65px;
     padding-right: 65px;
+    row-gap: 12px;
   }
 
   .reviews__button--prev {
@@ -4346,11 +4367,13 @@ button,
   .promo__description {
     width: 100%;
     position: relative;
-    padding: 50px 45px 91px 50px;
+    padding: 50px 45px 91px 45px;
   }
 
   .promo__description .promo__context {
-    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
     padding-left: 0;
   }
 
@@ -4363,6 +4386,8 @@ button,
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     bottom: 51px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
   .promo__picture {
@@ -4380,6 +4405,8 @@ button,
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .promo__info h3 {
@@ -4503,7 +4530,7 @@ button,
   }
 
   .reviews {
-    padding: 63px 0 64px;
+    padding: 63px 0 70px;
   }
 
   .reviews h2 {
@@ -4518,8 +4545,8 @@ button,
     -webkit-column-gap: 30px;
     -moz-column-gap: 30px;
     column-gap: 30px;
-    padding: 33px 25px 34px;
-    row-gap: 11px;
+    padding: 33px 25px 35px;
+    row-gap: 16px;
   }
 
   .reviews__wrapper {
@@ -4620,5 +4647,31 @@ button,
 
   .visit__input-wrapper input {
     width: 100%;
+  }
+}
+
+@media (width: 768px) {
+  .gym__video {
+    min-width: 266px;
+    min-height: 167px;
+    max-width: 266px;
+    max-height: 167px;
+  }
+
+  .gym__video img {
+    width: 266px;
+    height: 167px;
+  }
+
+  .gym__video iframe {
+    min-width: 266px;
+    min-height: 167px;
+    max-width: 266px;
+    max-height: 167px;
+  }
+
+  .gym__video iframe img {
+    width: 266px;
+    height: 167px;
   }
 }

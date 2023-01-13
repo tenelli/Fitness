@@ -25,7 +25,8 @@
 
   @media (max-width: $tablet-width) {
     width: 100%;
-      height: 100%;
+    height: 100%;
+
     img {
       width: 100%;
       height: 100%;
@@ -74,14 +75,28 @@
 
   @media (min-width: 768px) {
     position: absolute;
-    max-width: 266px;
-    height: 167px;
+    min-width: 266px;
+    min-height: 167px;
     left: 50%;
     transform: translateX(-50%);
     bottom: -17px;
 
     img {
+      min-width: 266px;
+      min-height: 167px;
+      aspect-ratio: 266/167;
+    }
+  }
+
+  @media (width: 768px) {
+    min-width: 266px;
+    min-height: 167px;
+    max-width: 266px;
+    max-height: 167px;
+
+    img {
       width: 266px;
+      height: 167px;
     }
   }
 
@@ -107,8 +122,26 @@
   z-index: -1;
 
   @media (max-width: $tablet-width) {
-    width: 266px;
-    height: 167px;
+    min-width: 266px;
+    min-height: 167px;
+
+    img {
+      min-width: 266px;
+      min-height: 167px;
+      aspect-ratio: 266/167;
+    }
+  }
+
+  @media (width: 768px) {
+    min-width: 266px;
+    min-height: 167px;
+    max-width: 266px;
+    max-height: 167px;
+
+    img {
+      width: 266px;
+      height: 167px;
+    }
   }
 
   @media (max-width: $mobile-width) {
@@ -126,6 +159,7 @@
 
 .gym__demonstration {
   position: relative;
+
   @media (min-width: $desktop-width) {
     margin: 0;
   }
@@ -286,4 +320,3 @@
     border: 1px solid $sprindle;
   }
 }
-

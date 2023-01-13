@@ -50,7 +50,7 @@
   @media (max-width: $mobile-width) {
     width: 100%;
     position: relative;
-    padding: 50px 45px 91px 50px;
+    padding: 50px 45px 91px 45px;
   }
 
   .promo__context {
@@ -68,12 +68,21 @@
       margin-bottom: 30px;
       padding-left: 10px;
       width: 202px;
-      margin-left: auto;
       margin-right: auto;
     }
 
+    @media (min-width: 769px) {
+      margin-left: auto;
+    }
+
+    @media (min-width: 768px) {
+      margin-left: -3px;
+    }
+
     @media (max-width: $mobile-width) {
-      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: left;
       padding-left: 0;
     }
   }
@@ -135,6 +144,8 @@
       left: 50%;
       transform: translateX(-50%);
       bottom: 51px;
+      padding-top: 10px;
+      padding-bottom: 10px;
     }
   }
 }
@@ -170,17 +181,30 @@
   gap: 60px;
   margin-bottom: 12px;
 
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+  }
+
   @media (max-width: $tablet-width) {
     gap: 34px;
     width: 202px;
-    margin-left: auto;
     margin-right: auto;
     margin-bottom: 0;
+  }
+
+  @media (min-width: 769px) {
+    margin-left: auto;
+  }
+
+  @media (min-width: 768px) {
+    margin-left: 0;
   }
 
   @media (max-width: $mobile-width) {
     gap: 35px;
     justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   h3 {

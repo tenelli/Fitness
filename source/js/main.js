@@ -172,5 +172,3 @@ if (gymButton && iframe) {
     });
   });
 }
-
-

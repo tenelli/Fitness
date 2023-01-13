@@ -14,32 +14,41 @@
   <body>
     <div class="wrapper">
       <header class="header">
-        <div class="container header__container">
-          <div class="header__main">
+        <div class="container">
+          <div class="header__top">
             <a class="header__logo">
               <svg width="122" height="44" role="img" aria-label="Логотип сайта в виде надписи Supergym.">
                 <use xlink:href="img/sprite/sprite.svg#logo"></use>
               </svg>
             </a>
-            <ul class="header__list">
-              <li>Тренажерный зал</li>
-              <li>Групповые занятия</li>
-              <li>Кардио-зона</li>
-            </ul>
-            <div class="header__wrapper">
-              <div class="header__description">
-                <span>Омск</span>
-                <h1>Фитнес<br> центр</h1>
-                <a class="header__buy unselectable" href="#subscription">Купить абонемент</a>
-              </div>
-              <div class="header__picture">
-                <picture>
-                  <source type="image/webp" srcset="./img/superman.webp, ./img/superman@2x.webp 2x">
-                  <img src="./img/superman.jpg" srcset="./img/superman@2x.jpg 2x" width="500" height="556" alt="Мужчина, косплеящий супермена." loading="lazy">
-                </picture>
-              </div>
+            <div class="header__desktop-phone">
+              <a class="header__phone unselectable" href="tel:+78005555555" tabindex="0">8-800-555-55-55</a>
             </div>
-            <a class="header__phone unselectable" href="tel:+78005555555" tabindex="0">8-800-555-55-55</a>
+            <div class="header__phone-wrapper">
+              <a class="header__phone unselectable" href="tel:+78005555555" tabindex="0">8-800-555-55-55</a>
+            </div>
+          </div>
+          <div class="header__main">
+            <div class="header__description">
+              <div class="header__content">
+                <ul class="header__list">
+                  <li>Тренажерный зал</li>
+                  <li>Групповые занятия</li>
+                  <li>Кардио-зона</li>
+                </ul>
+                <div class="header__promo-wrapper">
+                  <span>Омск</span>
+                  <h1>Фитнес<br> центр</h1>
+                </div>
+              </div>
+              <a class="header__buy unselectable" href="#subscription">Купить абонемент</a>
+            </div>
+            <div class="header__picture">
+              <picture>
+                <source type="image/webp" srcset="./img/superman.webp, ./img/superman@2x.webp 2x">
+                <img src="./img/superman.jpg" srcset="./img/superman@2x.jpg 2x" width="500" height="556" alt="Мужчина, косплеящий супермена." loading="lazy">
+              </picture>
+            </div>
           </div>
           <a class="header__button unselectable" href="#subscription">Купить абонемент</a>
         </div>
